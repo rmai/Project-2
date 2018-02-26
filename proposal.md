@@ -9,7 +9,7 @@
       Group repository:     https://github.com/SealTeam362/Project-2    
       Randy's repository:   https://github.com/rmai/Project-2
       Logan's repository:
-      Jarron's repository:
+      Jarron's repository:  https://github.com/jarronb/Project-2
       Zayaan's repository:  https://github.com/zhaider1/Project-2
 ##  Method of communication
       Basecamp
