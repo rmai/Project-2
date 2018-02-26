@@ -7,3 +7,5 @@ Randy Mai
 	- What's up guys. So basically I'm on the same boat as Logan here, where I can't do much javascript. Another thing is that, I have trouble using CSS grid but I can use flexbox perfectly fine. So yeah, I'm pretty flexible and willing to try to tackle challenging ideas for the website you guys might have.
 Jarron Bailey
 	- Hey, I feel like I'm pretty proficient in all three areas(HTML,CSS,JavaScript). I have not used CSS grid, but it should not be that hard to implement if you guys want it. Im also good at troubleshooting and tackling problems.
+Zayaan Haider 
+  - Hey Guys. I'm sort of the opposite of you guys in that I'm great with html, and okay with javascript, but really bad with css. So I think it should be pretty good to use our strengths together to make this group project work out. I'm a pretty good team player so hopefully it will go smooth. Looking forward to working with all of you guys.
