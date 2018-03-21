@@ -12,7 +12,7 @@ html {
   line-height: 1.222em; /* 22/18=1.222 */
   margin: 0.75em 0.75em 0.75em 0.75em;
 }
-li {
+a {
   text-decoration: none;
 }
 
@@ -35,7 +35,6 @@ li {
   padding-top: 1.222em;
   padding-bottom: 1.222em;
   text-align: center;
-  text-decoration: none;
   color: white;
   background-color: #688C95;
 }
@@ -49,6 +48,9 @@ li {
   padding-bottom: 1.222em;
   width: 25%;
   background-color: cyan;
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
 }
+/*#nav a {
+  text-decoration: none;
+}*/
