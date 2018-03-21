@@ -10,4 +10,45 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18/16=1.125 */
   line-height: 1.222em; /* 22/18=1.222 */
+  margin: 0.75em 0.75em 0.75em 0.75em;
+}
+li {
+  text-decoration: none;
+}
+
+#quickOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: red;
+}
+#quickOptions li {
+  float: left;
+  text-align: center;
+  width: 50%;
+  padding: 1.222em;
+  text-decoration: none;
+}
+#quickOptions a {
+  display: block;
+  width: 100%;
+  padding-top: 1.222em;
+  padding-bottom: 1.222em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #688C95;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#nav li{
+  padding-top:1.222em;
+  padding-bottom: 1.222em;
+  width: 25%;
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
 }
