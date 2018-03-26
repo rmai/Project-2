@@ -43,12 +43,6 @@ body {
      relationships
 */
 
-#menu ul,
-#menu li {
-  display: block;
-  background-color: #FF8080;
-}
-
 #menu a {
   text-decoration: none;
   display: block;
@@ -69,6 +63,8 @@ body {
 }
 
 #menu li {
+  display: block;
+  background-color: #FF8080;
   float: left;
   width: 20%;
 }
