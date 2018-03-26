@@ -16,6 +16,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   3. basic element presenation
 */
 
+/*
+  Using a 4:3 modular scale
+  http://www.modularscale.com/?18&px&1.333
+*/
+
+html {
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 1.222em; /* 22 / 18 = 1.2222222 */
+}
+
+body {
+  padding-top: 1.667em; /* 66 / 18 = 3.667 FIX THIS LATER */
+  padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
+  padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
+  background-color: #f4f4f8; /* silver */
+}
+
 /* Layout Styles */
 /*
   Hint: these tend to be
@@ -23,6 +41,44 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   2. concerned with layout and spatial
      relationships
 */
+
+#menu ul,
+#menu li {
+  display: block;
+  background-color: #FF8080;
+}
+
+#menu a {
+  text-decoration: none;
+  display: block;
+  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
+  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
+  text-align: center;
+}
+
+#menu a:hover {
+  background-color: #FFAEAE;
+}
+
+#menu {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#menu li {
+  float: left;
+  width: 20%;
+}
+
+#food-choices section {
+  margin-top: 75.757px;
+}
+
+#about-us header {
+  padding-top: 31.984px;
+}
 
 
 /* State Styles */
