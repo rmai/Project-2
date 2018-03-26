@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  padding-top: 1.667em; /* 66 / 18 = 3.667 FIX THIS LATER */
+  padding-top: 1.222em; /* 66 / 18 = 3.667 FIX THIS LATER */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
   background-color: #f4f4f8; /* silver */
@@ -55,18 +55,8 @@ body {
   background-color: #FFAEAE;
 }
 
-#menu {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
 #menu li {
-  display: block;
   background-color: #FF8080;
-  float: left;
-  width: 20%;
 }
 
 #food-choices section {
@@ -87,3 +77,19 @@ body {
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
 */
+@media screen and (min-width: 500px) {
+  #menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  #menu li {
+    display: block;
+    background-color: #FF8080;
+    float: left;
+    width: 20%;
+  }
+
+}
