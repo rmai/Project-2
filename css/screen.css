@@ -25,6 +25,7 @@ html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.222em; /* 22 / 18 = 1.2222222 */
+  padding: 0.75em 0.75em 0.75em 0.75em;
 }
 
 body {
