@@ -16,23 +16,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   3. basic element presenation
 */
 
-/*
-  Using a 4:3 modular scale
-  http://www.modularscale.com/?18&px&1.333
-*/
-
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.222em; /* 22 / 18 = 1.2222222 */
-  padding: 0.75em 0.75em 0.75em 0.75em;
 }
 
 body {
   padding-top: 1.222em; /* 66 / 18 = 3.667 FIX THIS LATER */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
-  background-color: #f4f4f8; /* silver */
 }
 
 /* Layout Styles */
@@ -66,7 +59,6 @@ body {
 #about-us header {
   padding-top: 31.984px;
 }
-
 
 /* State Styles */
 /*
