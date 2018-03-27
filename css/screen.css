@@ -28,6 +28,10 @@ body {
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
 
+}
+#logo {
+  width: 100%;
+}
 /* Layout Styles */
 /*
   Hint: these tend to be
@@ -75,6 +79,20 @@ text-decoration: none;
 padding: 22px 0;
 }
 
+#deli-or-carryout li {
+  width: 30%;
+  float: left;
+  border: 2px solid blue; /* NOTE: diagnostics */
+}
+#logo-item {
+  width: 15%;
+}
+#logo {
+  height: 62px;
+}
+footer {
+  float: none;
+}
 /* State Styles */
 /*
   States of the browser and user access
