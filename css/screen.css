@@ -34,8 +34,10 @@ h1 {
   padding-bottom: 33px; /* 44 / 42.635 = 1.032*/
   padding-top: 66px;
   color: red;
+  background-color: rgba(0,0,255,0.4);
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.222em; /* 22 / 18 = 1.2222222 */
+  border: 2px solid red; /* NOTE: diagnostics */
 }
 
 body {
@@ -43,6 +45,7 @@ body {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
+p {
 
 }
 #logo {
@@ -56,6 +59,9 @@ body {
      relationships
 */
 
+#primary header {
+  border: 2px solid blue; /* NOTE: diagnostics */
+}
 #nav a {
   text-decoration: none;
   display: block;
