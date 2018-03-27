@@ -18,6 +18,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em; /* 22 / 18 = 1.222*/
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color: #B0BEC5;
+  color: #093755;
+}
+h1,
+h2,
+h3 {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+h1 {
+  font-size: 33px; /* 42.635 / 18 = 2.369 */
+  line-height: 33px; /* 44 / 42.635 = 1.032*/
+  padding-bottom: 33px; /* 44 / 42.635 = 1.032*/
+  padding-top: 66px;
+  color: red;
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.222em; /* 22 / 18 = 1.2222222 */
 }
