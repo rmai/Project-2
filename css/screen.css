@@ -56,12 +56,11 @@ body {
   background-color: #FF8080;
 }
 
-#food-choices section {
-  margin-top: 75.757px;
+#food-choices,
+#deli-or-carryout li{
+  margin-top: 66px;
 }
 
-#about-us header {
-  padding-top: 31.984px;
 #food-choices-navigation ul li {
   width: 45%;
   float: left;
