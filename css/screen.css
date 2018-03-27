@@ -16,25 +16,41 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   3. basic element presenation
 */
 
-/*
-  Using a 4:3 modular scale
-  http://www.modularscale.com/?18&px&1.333
-*/
-
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em; /* 22 / 18 = 1.222*/
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color: #B0BEC5;
+  color: #093755;
+}
+h1,
+h2,
+h3 {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+h1 {
+  font-size: 33px; /* 42.635 / 18 = 2.369 */
+  line-height: 33px; /* 44 / 42.635 = 1.032*/
+  padding-bottom: 33px; /* 44 / 42.635 = 1.032*/
+  padding-top: 66px;
+  color: red;
+  background-color: rgba(0,0,255,0.4);
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.222em; /* 22 / 18 = 1.2222222 */
-  padding: 0.75em 0.75em 0.75em 0.75em;
+  border: 2px solid red; /* NOTE: diagnostics */
 }
 
 body {
   padding-top: 1.222em; /* 66 / 18 = 3.667 FIX THIS LATER */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
-  background-color: #f4f4f8; /* silver */
 }
+p {
 
+}
+#logo {
+  width: 100%;
+}
 /* Layout Styles */
 /*
   Hint: these tend to be
@@ -43,6 +59,9 @@ body {
      relationships
 */
 
+#primary header {
+  border: 2px solid blue; /* NOTE: diagnostics */
+}
 #nav a {
   text-decoration: none;
   display: block;
@@ -59,15 +78,42 @@ body {
   background-color: #FF8080;
 }
 
-#food-choices section {
-  margin-top: 75.757px;
+#food-choices,
+#deli-or-carryout li{
+  margin-top: 66px;
 }
 
-#about-us header {
-  padding-top: 31.984px;
+#food-choices-navigation ul li {
+  width: 45%;
+  float: left;
+  border: 2px solid blue; /* NOTE: diagnostics */
+  box-sizing: border-box;
+  margin-top: 11px;
+}
+#food-choices-navigation ul li:nth-child(even) {
+  margin-left: 5%;
+  border: 2px solid red; /* NOTE: diagnostics */
+}
+ul li a {
+display: block;
+text-decoration: none;
+padding: 22px 0;
 }
 
-
+#deli-or-carryout li {
+  width: 30%;
+  float: left;
+  border: 2px solid blue; /* NOTE: diagnostics */
+}
+#logo-item {
+  width: 15%;
+}
+#logo {
+  height: 62px;
+}
+footer {
+  float: none;
+}
 /* State Styles */
 /*
   States of the browser and user access
