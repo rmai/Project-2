@@ -58,6 +58,21 @@ body {
 
 #about-us header {
   padding-top: 31.984px;
+#food-choices-navigation ul li {
+  width: 45%;
+  float: left;
+  border: 2px solid blue; /* NOTE: diagnostics */
+  box-sizing: border-box;
+  margin-top: 11px;
+}
+#food-choices-navigation ul li:nth-child(even) {
+  margin-left: 5%;
+  border: 2px solid red; /* NOTE: diagnostics */
+}
+ul li a {
+display: block;
+text-decoration: none;
+padding: 22px 0;
 }
 
 /* State Styles */
