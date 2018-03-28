@@ -114,6 +114,11 @@ padding: 22px 0;
 footer {
   float: none;
 }
+.menu-item {
+  margin-top: 22px;
+  border: 2px solid black;
+  padding: 11px 11px;
+}
 /* State Styles */
 /*
   States of the browser and user access
