@@ -20,7 +20,7 @@ html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.222*/
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  background-color: #B0BEC5;
+  /*background-color: #B0BEC5;*/
   color: #093755;
 }
 h1,
@@ -45,9 +45,11 @@ body {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
+
 p {
 
 }
+
 #logo {
   width: 100%;
 }
@@ -82,26 +84,30 @@ p {
 #deli-or-carryout li{
   margin-top: 66px;
 }
+#food-choices-navigation ul {
 
+  columns: 2 2em;
+}
 #food-choices-navigation ul li {
-  width: 45%;
-  float: left;
+  display: inline-block;
+  width: 100%;
   border: 2px solid blue; /* NOTE: diagnostics */
   box-sizing: border-box;
   margin-top: 11px;
 }
-#food-choices-navigation ul li:nth-child(even) {
-  margin-left: 5%;
-  border: 2px solid red; /* NOTE: diagnostics */
-}
+
 ul li a {
 display: block;
 text-decoration: none;
 padding: 22px 0;
 }
-
+#deli-or-carryout {
+  columns: 3;
+  column-gap: 0;
+}
 #deli-or-carryout li {
-  width: 30%;
+  text-align: center;
+  width: 100%;
   float: left;
   border: 2px solid blue; /* NOTE: diagnostics */
 }
@@ -113,6 +119,7 @@ padding: 22px 0;
 }
 footer {
   float: none;
+  text-align: center;
 }
 .menu-item {
   margin-top: 22px;
