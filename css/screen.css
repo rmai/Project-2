@@ -46,13 +46,17 @@ body {
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
 
-p {
-
+ul li a {
+display: block;
+text-decoration: none;
+padding: 22px 0;
 }
 
-#logo {
-  width: 100%;
+footer {
+  float: none;
+  text-align: center;
 }
+
 /* Layout Styles */
 /*
   Hint: these tend to be
@@ -60,7 +64,9 @@ p {
   2. concerned with layout and spatial
      relationships
 */
-
+#logo {
+  width: 100%;
+}
 #primary header {
   border: 2px solid blue; /* NOTE: diagnostics */
 }
@@ -96,11 +102,6 @@ p {
   margin-top: 11px;
 }
 
-ul li a {
-display: block;
-text-decoration: none;
-padding: 22px 0;
-}
 #deli-or-carryout {
   columns: 3;
   column-gap: 0;
@@ -117,10 +118,7 @@ padding: 22px 0;
 #logo {
   height: 62px;
 }
-footer {
-  float: none;
-  text-align: center;
-}
+
 .menu-item {
   margin-top: 22px;
   border: 2px solid black;
