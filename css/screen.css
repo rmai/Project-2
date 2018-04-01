@@ -19,31 +19,37 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.222*/
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  /*background-color: #B0BEC5;*/
+  /*font-family: Century Gothic, sans-serif;*/
+  background-color: #FF988B;
   color: #093755;
 }
 h1,
 h2,
 h3 {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
 }
+
 h1 {
   font-size: 33px; /* 42.635 / 18 = 2.369 */
   line-height: 33px; /* 44 / 42.635 = 1.032*/
-  padding-bottom: 33px; /* 44 / 42.635 = 1.032*/
-  padding-top: 66px;
-  color: red;
-  background-color: rgba(0,0,255,0.4);
-  font-family: Verdana, Geneva, sans-serif;
+  padding-bottom: 9px; /* 44 / 42.635 = 1.032*/
+  padding-top: 22px;
+  margin-left: 1.6em;
+  margin-top: 0.2em;
+  width: 14em;
+  background-color: rgba(109,181,195);
   line-height: 1.222em; /* 22 / 18 = 1.2222222 */
-  border: 2px solid red; /* NOTE: diagnostics */
+  /*border: 2px solid white; /* NOTE: diagnostics */
 }
 
 body {
   padding-top: 1.222em; /* 66 / 18 = 3.667 FIX THIS LATER */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
+}
+
+p {
+  padding-left: 10.5em;
 }
 
 ul li a {
@@ -64,11 +70,24 @@ footer {
   2. concerned with layout and spatial
      relationships
 */
+
+#seal-team-logo {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
 #logo {
   width: 100%;
 }
+
+#sealteam {
+  padding-left: 1.5em;
+  font-size: 4.209em;
+}
+
 #primary header {
-  border: 2px solid blue; /* NOTE: diagnostics */
+  /*border: 2px solid white; /* NOTE: diagnostics */
 }
 #nav a {
   text-decoration: none;
@@ -83,7 +102,7 @@ footer {
 }
 
 #nav li {
-  background-color: #FF8080;
+  background-color: #FF988B;
 }
 
 #food-choices,
@@ -97,9 +116,10 @@ footer {
 #food-choices-navigation ul li {
   display: inline-block;
   width: 100%;
-  border: 2px solid blue; /* NOTE: diagnostics */
+  border: 2px solid white; /* NOTE: diagnostics */
   box-sizing: border-box;
   margin-top: 11px;
+  background-color: rgba(109,181,195);
 }
 
 #deli-or-carryout {
@@ -110,7 +130,8 @@ footer {
   text-align: center;
   width: 100%;
   float: left;
-  border: 2px solid blue; /* NOTE: diagnostics */
+  border: 2px solid white; /* NOTE: diagnostics */
+  background-color: #093755;
 }
 #logo-item {
   width: 15%;
