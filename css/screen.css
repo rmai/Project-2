@@ -65,7 +65,14 @@ footer {
   2. concerned with layout and spatial
      relationships
 */
+/* NOTE: Body header */
+#header img {
+  display: block;
+  max-height: 88px;
+  float: left;
 }
+#header h1 {
+  padding-top: 22px;
 }
 
 #primary header {
