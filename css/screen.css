@@ -150,43 +150,19 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 }
   box-sizing: border-box;
   margin-top: 11px;
-  background-color: rgba(109,181,195);
 }
-
-#deli-or-carryout {
-  columns: 3;
-  column-gap: 0;
 }
-#deli-or-carryout li {
   text-align: center;
-  width: 100%;
-  float: left;
-  border: 2px solid white; /* NOTE: diagnostics */
-  background-color: #093755;
 }
 
-#slideshow {
-  margin-left: 16em;
-  margin-top: 80px;
-  display: block;
+#nav li {
 }
-
-#photos {
+  padding-bottom: 300px;
   font-size: 1.777em;
-  padding-bottom: 0.5em;
 }
-
-#slideshow > figure {
-  position: absolute;
 }
-
-#logo-item {
-  width: 15%;
 }
-#logo {
-  height: 62px;
 }
-
 .menu-item {
   margin-top: 22px;
   border: 2px solid black;
@@ -216,4 +192,3 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
     width: 20%;
   }
 
-}
