@@ -83,13 +83,24 @@ footer {
 border: 2px solid white; /* NOTE: diagnostics*/
 }
 
+#order-options li,
+#food-choices-navigation li {
+  width: 100%;
+  font-size: 1.777em;
   text-align: center;
+  box-sizing: border-box;
+  margin-top: 11px;
+  background-color: rgba(109,181,195,1);
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
+#food-choices-navigation a {
+  padding: 30px;
 }
 
-#nav li {
-  background-color: #FF988B;
 }
 }
 
