@@ -101,6 +101,9 @@ border: 2px solid white; /* NOTE: diagnostics*/
   padding: 30px;
 }
 
+#slideshow,
+#order-options {
+  margin-top: 60px;
 }
 }
 
