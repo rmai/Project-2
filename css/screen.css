@@ -65,20 +65,7 @@ footer {
   2. concerned with layout and spatial
      relationships
 */
-
-#seal-team-logo {
-  position: absolute;
-  top: 0px;
-  left: 10px;
 }
-
-#logo {
-  width: 100%;
-}
-
-#sealteam {
-  padding-left: 1.5em;
-  font-size: 4.209em;
 }
 
 #primary header {
