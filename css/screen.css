@@ -32,13 +32,7 @@ h3 {
 h1 {
   font-size: 33px; /* 42.635 / 18 = 2.369 */
   line-height: 33px; /* 44 / 42.635 = 1.032*/
-  padding-bottom: 9px; /* 44 / 42.635 = 1.032*/
-  padding-top: 22px;
-  margin-left: 1.6em;
-  margin-top: 0.2em;
-  width: 14em;
-  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);;
-  line-height: 1.222em; /* 22 / 18 = 1.2222222 */
+  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
   /*border: 2px solid white; /* NOTE: diagnostics */
 }
 
