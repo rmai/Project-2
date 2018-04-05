@@ -138,12 +138,16 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
     padding-bottom: 350px;
 }
 
-#food-choices-navigation ul li {
-  display: block;
-  width: 15em;
-  font-size: 1.777em;
-  text-align: center;
-  border: 2px solid white; /* NOTE: diagnostics */
+#food-choices-navigation li {
+  float: left;
+  width: 45%;
+  border: 2px solid blue; /* NOTE: diagnostics */
+  box-sizing: border-box;
+}
+#food-choices-navigation li:nth-child(even) {
+  margin-left: 5%;
+  border: 2px solid red; /* NOTE: diagnostics */
+}
   box-sizing: border-box;
   margin-top: 11px;
   background-color: rgba(109,181,195);
