@@ -43,8 +43,7 @@ main {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
-
-ul li a {
+ul a {
 display: block;
 text-decoration: none;
 padding-left: 20px;
@@ -53,8 +52,6 @@ padding-bottom: 15px;
 }
 
 footer {
-
-  text-align: center;
   position: absolute;
   width: 100%;
   height: 20px;
