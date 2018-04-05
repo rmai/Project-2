@@ -79,34 +79,20 @@ footer {
   /*border: 2px solid white; /* NOTE: diagnostics */
 }
 
-#about {
-  padding-left: 12.5em;
+#about-us header {
+border: 2px solid white; /* NOTE: diagnostics*/
 }
 
-#nav a {
-  text-decoration: none;
-  display: block;
-  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
-  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
   text-align: center;
 }
 
-#nav a:hover {
-  background-color: #FFAEAE;
 }
 
 #nav li {
   background-color: #FF988B;
 }
-
-#wrapper {
-  column-count: 2;
-  display: flex;
 }
 
-#food-choices,
-#deli-or-carryout li{
-  margin-top: 66px;
 }
 
 #food-choices-navigation ul li {
