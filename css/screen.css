@@ -148,14 +148,40 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   margin-left: 5%;
   border: 2px solid red; /* NOTE: diagnostics */
 }
+#nav {
+  margin-top: 50px;
+}
+#nav li {
+  width: 45%;
+  border: 2px solid blue; /* NOTE: diagnostics */
   box-sizing: border-box;
   margin-top: 11px;
+  background-color: rgba(109,181,195,1);
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 22px;
 }
+#nav li:nth-child(even) {
+  float: right;
+  margin-left: 5%;
+  margin-top: -50px;
+  margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
+  border: 2px solid red; /* NOTE: diagnostics */
 }
+#nav li:last-child{
+  margin: 0 auto;
+  margin-top: 11px;
+}
+#nav a {
+  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
+  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
   text-align: center;
 }
 
 #nav li {
+  background-color: rgba(109,181,195,1);
 }
   padding-bottom: 300px;
   font-size: 1.777em;
