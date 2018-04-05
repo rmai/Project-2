@@ -186,8 +186,22 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-bottom: 300px;
   font-size: 1.777em;
 }
+#pizza-navigation {
+  width: 100%;
+  float: left;
 }
+#pizza-navigation ul {
+  width: 100%;
+  padding: 0;
+  margin-left: -0.70em;
+  margin-right: -0.70em;
+  float: left;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
+#pizza-navigation li {
+  width: 20%;
+  float: left;
 }
 .menu-item {
   margin-top: 22px;
