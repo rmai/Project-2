@@ -105,7 +105,30 @@ border: 2px solid white; /* NOTE: diagnostics*/
 #order-options {
   margin-top: 60px;
 }
+#slideshow h2 {
+  font-size: 1.777em;
+  padding-bottom: 0.5em;
+  text-align: center;
 }
+#slideshow figure {
+position: absolute;
+border: 2px solid white; /* NOTE: diagnostics */
+/* NOTE: centers figure element horizontally */
+left: 0;
+right: 0;
+/* NOTE: keep padding same with main content */
+margin-left: 1.222em; /* 22 / 18 = 1.2222222 */
+margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
+}
+#slideshow figcaption {
+  text-align: center;
+}
+#slideshow img {
+  display: block;
+  max-width: 100%;
+  max-height: 250px;
+  /* NOTE: centers picture inside figure element */
+  margin: 0 auto;
 
 }
 
