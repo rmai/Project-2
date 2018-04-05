@@ -37,9 +37,11 @@ h1 {
 }
 
 body {
-  padding-top: 1.222em; /* 66 / 18 = 3.667 FIX THIS LATER */
+  padding-bottom: 100px;
+}
+main {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
-  padding-bottom: 300px;
+  padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
 
 ul li a {
