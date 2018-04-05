@@ -183,8 +183,17 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 #nav li {
   background-color: rgba(109,181,195,1);
 }
+#intro-page body {
   padding-bottom: 300px;
+}
+#food-choices h2,
+#pizzas h2 {
   font-size: 1.777em;
+  line-height: 33px;
+  padding-bottom: 11px;
+}
+#food-choices p {
+  font-size: 22px;
 }
 #pizza-navigation {
   width: 100%;
