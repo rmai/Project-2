@@ -231,6 +231,11 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   3. Organized by Base, Layout, Module, State
 */
 @media screen and (min-width: 500px) {
+  #order-options {
+    padding: 0 15%;
+  }
+
+}
   #nav {
     position: absolute;
     width: 100%;
