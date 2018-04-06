@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 /* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 /* Begin site styles below */
@@ -19,38 +19,45 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.222*/
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  background-color: #B0BEC5;
+  /*font-family: Century Gothic, sans-serif;*/
+  background-color: #D7DCDD;
   color: #093755;
 }
 h1,
 h2,
 h3 {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
 }
+
 h1 {
   font-size: 33px; /* 42.635 / 18 = 2.369 */
   line-height: 33px; /* 44 / 42.635 = 1.032*/
-  padding-bottom: 33px; /* 44 / 42.635 = 1.032*/
-  padding-top: 66px;
-  color: red;
-  background-color: rgba(0,0,255,0.4);
-  font-family: Verdana, Geneva, sans-serif;
-  line-height: 1.222em; /* 22 / 18 = 1.2222222 */
-  border: 2px solid red; /* NOTE: diagnostics */
+  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
+  /*border: 2px solid white; /* NOTE: diagnostics */
 }
 
 body {
-  padding-top: 1.222em; /* 66 / 18 = 3.667 FIX THIS LATER */
+  padding-bottom: 100px;
+}
+main {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
-p {
+ul a {
+display: block;
+text-decoration: none;
+padding-left: 20px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
 
-}
-#logo {
+footer {
+  position: absolute;
   width: 100%;
+  height: 20px;
+  bottom: 0;
 }
+
 /* Layout Styles */
 /*
   Hint: these tend to be
@@ -58,66 +65,161 @@ p {
   2. concerned with layout and spatial
      relationships
 */
+/* NOTE: Body header */
+#header img {
+  display: block;
+  max-height: 88px;
+  float: left;
+}
+#header h1 {
+  padding-top: 22px;
+}
 
 #primary header {
+  /*border: 2px solid white; /* NOTE: diagnostics */
+}
+
+#about-us header {
+border: 2px solid white; /* NOTE: diagnostics*/
+}
+
+#order-options li,
+#food-choices-navigation li {
+  width: 100%;
+  font-size: 1.777em;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 11px;
+  background-color: rgba(109,181,195,1);
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#food-choices-navigation a {
+  padding: 30px;
+}
+
+#slideshow,
+#order-options {
+  margin-top: 60px;
+}
+#slideshow h2 {
+  font-size: 1.777em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+#slideshow figure {
+position: absolute;
+border: 2px solid white; /* NOTE: diagnostics */
+/* NOTE: centers figure element horizontally */
+left: 0;
+right: 0;
+/* NOTE: keep padding same with main content */
+margin-left: 1.222em; /* 22 / 18 = 1.2222222 */
+margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
+}
+#slideshow figcaption {
+  text-align: center;
+}
+#slideshow img {
+  display: block;
+  max-width: 100%;
+  max-height: 250px;
+  /* NOTE: centers picture inside figure element */
+  margin: 0 auto;
+
+}
+#food-choices {
+  margin-top: 44px;
+}
+#food-choices-page body {
+    padding-bottom: 350px;
+}
+
+#food-choices-navigation li {
+  float: left;
+  width: 45%;
   border: 2px solid blue; /* NOTE: diagnostics */
+  box-sizing: border-box;
+}
+#food-choices-navigation li:nth-child(even) {
+  margin-left: 5%;
+  border: 2px solid red; /* NOTE: diagnostics */
+}
+#nav {
+  margin-top: 50px;
+}
+#nav li {
+  width: 45%;
+  border: 2px solid blue; /* NOTE: diagnostics */
+  box-sizing: border-box;
+  margin-top: 11px;
+  background-color: rgba(109,181,195,1);
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 22px;
+}
+#nav li:nth-child(even) {
+  float: right;
+  margin-left: 5%;
+  margin-top: -50px;
+  margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
+  border: 2px solid red; /* NOTE: diagnostics */
+}
+#nav li:last-child{
+  margin: 0 auto;
+  margin-top: 11px;
 }
 #nav a {
-  text-decoration: none;
-  display: block;
   padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
   text-align: center;
 }
 
-#nav a:hover {
-  background-color: #FFAEAE;
-}
-
 #nav li {
-  background-color: #FF8080;
+  background-color: rgba(109,181,195,1);
 }
-
-#food-choices,
-#deli-or-carryout li{
-  margin-top: 66px;
+#intro-page body {
+  padding-bottom: 300px;
 }
-
-#food-choices-navigation ul li {
-  width: 45%;
+#food-choices h2,
+#pizzas h2 {
+  font-size: 1.777em;
+  line-height: 33px;
+  padding-bottom: 11px;
+}
+#food-choices p {
+  font-size: 22px;
+}
+#pizza-navigation {
+  width: 100%;
   float: left;
-  border: 2px solid blue; /* NOTE: diagnostics */
-  box-sizing: border-box;
-  margin-top: 11px;
 }
-#food-choices-navigation ul li:nth-child(even) {
-  margin-left: 5%;
-  border: 2px solid red; /* NOTE: diagnostics */
-}
-ul li a {
-display: block;
-text-decoration: none;
-padding: 22px 0;
-}
-
-#deli-or-carryout li {
-  width: 30%;
+#pizza-navigation ul {
+  width: 100%;
+  padding: 0;
+  margin-left: -0.70em;
+  margin-right: -0.70em;
   float: left;
-  border: 2px solid blue; /* NOTE: diagnostics */
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
-#logo-item {
-  width: 15%;
-}
-#logo {
-  height: 62px;
-}
-footer {
-  float: none;
+#pizza-navigation li {
+  width: 20%;
+  float: left;
 }
 .menu-item {
   margin-top: 22px;
   border: 2px solid black;
   padding: 11px 11px;
+}
+#menu {
+  float: none;
+  margin-top: 110px;
 }
 /* State Styles */
 /*
@@ -129,6 +231,12 @@ footer {
   3. Organized by Base, Layout, Module, State
 */
 @media screen and (min-width: 500px) {
+  #order-options {
+    padding: 0 15%;
+  }
+
+}
+/* @media screen and (min-width: 500px) {
   #nav {
     position: absolute;
     width: 100%;
@@ -143,4 +251,4 @@ footer {
     width: 20%;
   }
 
-}
+} */
