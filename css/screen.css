@@ -1,311 +1,125 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* stylelint-enable */
-
-/* Begin site styles below */
-
-/* Base Styles */
-/*
-  Hint: these tend to be
-  1. element selectors
-  2. concerned with color and typography
-  3. basic element presenation
-*/
-
-html {
-  font-size: 1.125em; /* 18 / 16 = 1.125 */
-  line-height: 1.222em; /* 22 / 18 = 1.222*/
-  /*font-family: Century Gothic, sans-serif;*/
-  background-color: #D7DCDD;
-  color: #093755;
-}
-h1,
-h2,
-h3 {
-  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
-}
-
-h1 {
-  font-size: 33px; /* 42.635 / 18 = 2.369 */
-  line-height: 33px; /* 44 / 42.635 = 1.032*/
-  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
-  /*border: 2px solid white; /* NOTE: diagnostics */
-}
-h2 {
-font-size: 1.777em;
-padding-bottom: 0.5em;
-}
-
-body {
-  padding-bottom: 100px;
-}
-main {
-  padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
-  padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
-}
-ul a {
-display: block;
-text-decoration: none;
-padding-left: 20px;
-padding-top: 15px;
-padding-bottom: 15px;
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  bottom: 0;
-}
-
-/* Layout Styles */
-/*
-  Hint: these tend to be
-  1. IDs; but also classes, sometimes
-  2. concerned with layout and spatial
-     relationships
-*/
-/* NOTE: Body header */
-#header img {
-  display: block;
-  max-height: 88px;
-  float: left;
-}
-#header h1 {
-  padding-top: 22px;
-}
-#about-us h2,
-article header {
-  padding-top: 44px;
-}
-#primary header {
-  /*border: 2px solid white; /* NOTE: diagnostics */
-}
-
-#about-us header {
-border: 2px solid white; /* NOTE: diagnostics*/
-}
-
-#order-options li,
-#food-choices-navigation li {
-  width: 100%;
-  font-size: 1.777em;
-  text-align: center;
-  box-sizing: border-box;
-  margin-top: 11px;
-  background-color: rgba(109,181,195,1);
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-
-#food-choices-navigation a {
-  padding: 30px;
-}
-
-#slideshow,
-#order-options {
-  margin-top: 60px;
-}
-#slideshow h2 {
-  text-align: center;
-}
-#slideshow figure {
-position: absolute;
-border: 2px solid white; /* NOTE: diagnostics */
-/* NOTE: centers figure element horizontally */
-left: 0;
-right: 0;
-/* NOTE: keep padding same with main content */
-margin-left: 1.222em; /* 22 / 18 = 1.2222222 */
-margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
-}
-#slideshow figcaption {
-  text-align: center;
-}
-#slideshow img {
-  display: block;
-  max-width: 100%;
-  max-height: 250px;
-  /* NOTE: centers picture inside figure element */
-  margin: 0 auto;
-
-}
-#food-choices-page body {
-    padding-bottom: 350px;
-}
-
-#food-choices-navigation li {
-  float: left;
-  width: 45%;
-  border: 2px solid blue; /* NOTE: diagnostics */
-  box-sizing: border-box;
-}
-#food-choices-navigation li:nth-child(even) {
-  margin-left: 5%;
-  border: 2px solid red; /* NOTE: diagnostics */
-}
-.no-js #nav {
-  margin-top: 50px;
-}
-.no-js #nav li {
-  width: 45%;
-  border: 2px solid blue; /* NOTE: diagnostics */
-  box-sizing: border-box;
-  margin-top: 11px;
-  background-color: rgba(109,181,195,1);
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  font-size: 22px;
-}
-.no-js #nav li:nth-child(even) {
-  float: right;
-  margin-left: 5%;
-  margin-top: -50px;
-  margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
-  border: 2px solid red; /* NOTE: diagnostics */
-}
-.no-js #nav li:last-child{
-  margin: 0 auto;
-  margin-top: 11px;
-}
-.no-js #nav a {
-  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
-  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
-  text-align: center;
-}
-
-.no-js #nav li {
-  background-color: rgba(109,181,195,1);
-}
-#intro-page body {
-  padding-bottom: 300px;
-}
-#food-choices h2,
-#pizzas h2 {
-  font-size: 1.777em;
-  line-height: 33px;
-  padding-bottom: 11px;
-}
-#food-choices p {
-  font-size: 22px;
-}
-#pizza-navigation {
-  width: 100%;
-  float: left;
-}
-#pizza-navigation ul {
-  width: 100%;
-  padding: 0;
-  margin-left: -0.70em;
-  margin-right: -0.70em;
-  float: left;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-#pizza-navigation li {
-  width: 20%;
-  float: left;
-}
-.menu-item {
-  margin-top: 22px;
-  border: 2px solid black;
-  padding: 11px 11px;
-}
-#menu {
-  float: none;
-  margin-top: 110px;
-}
-/* State Styles */
-/*
-  States of the browser and user access
-  conditions.
-  Hint: these tend to be:
-  1. Driven by media queries
-  2. Influenced by JavaScript
-  3. Organized by Base, Layout, Module, State
-*/
-.js #header {
-  padding-bottom: 33px;
-  box-shadow: 0  0.2778em 0.556em #000000; /* NOTE: 5px/18 =0.2778 ; 10/18=556  */
-}
-.js #nav ul {
-  display: none;
-}
-#js-nav {
-  position: absolute;
-  right: 0;
-  top: 22px;
-}
-/* NOTE: Credit to https://css-tricks.com/three-line-menu-navicon/ */
-.js .border-menu {
-  position: relative;
-  padding-left: 1.25em;
-}
-.js .border-menu:before {
-  content: "";
-  position: absolute;
-  top: 0.25em;
-  right: 22px;
-  width: 44px;
-  height: 6px;
-  border-top: 18px double #000;
-  border-bottom: 6px solid #000;
-}
-.js #header.nav-is-visible {
-  box-shadow: none;
-}
-.js #nav.nav-is-visible {
-  margin-top: 50px;
-  padding: 0;
-}
-.js #nav ul.nav-is-visible {
-  display: block;
-  width: 100%;
-  padding: 0;
-  background: inherit;
-}
-.js #nav ul.nav-is-visible:last-child {
-  box-shadow: 0  0.2778em 0.556em #000000; /* NOTE: 5px/18 =0.2778 ; 10/18=556  */
-}
-.js #nav.nav-is-visible li {
-  border-bottom: 1px solid black; /* NOTE: diagnostics */
-  box-sizing: border-box;
-  font-size: 22px;
-}
-.js #nav.nav-is-visible a {
-  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
-  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
-  color: white;
-  font-weight: bold;
-}
-@media screen and (min-width: 500px) {
-  #order-options {
-    padding: 0 15%;
-  }
-
-}
-
-/* @media screen and (min-width: 500px) {
-  #nav {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-
-  #nav li {
-    display: block;
-    background-color: #FF8080;
-    float: left;
-    width: 20%;
-  }
-
-} */
+<!DOCTYPE html>
+<html lang="en" id="pizzas" class="no-js">
+  <head>
+    <title>Seal Team Pizzeria</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <link rel="stylesheet" href="../css/screen.css" />
+    <link rel="stylesheet" href="//basehold.it/22">
+  </head>
+  <body>
+    <header id="header">
+      <a href="../"><img src="../img/sealteam3.png"></a>
+      <h1><a href="../">Seal Team Pizza</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Coupons</a></li>
+          <li><a href="">Location</a></li>
+          <li><a href="">Log In</a></li>
+          <li><a href="">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content">
+      <article id="primary">
+        <header>
+          <h2>Pizza</h1>
+          <nav id="pizza-navigation">
+            <ul>
+              <li><a href="#">Popular Pizzas</a></li>
+              <li><a href="meats/">Meats</a></li>
+              <li><a href="chicken/">Chicken</a></li>
+              <li><a href="veggie/">Veggie</a></li>
+              <li><a href="create-your-own/">Create Your Own</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section id="menu">
+          <ul>
+            <li class="menu-item">
+              <ul>
+                <li class="menu-item-header">Cheese Pizza</li>
+                <li class="menu-item-description">Your favorite cheese pizza
+                  made with classic marinara sauce topped with mozzarella cheese.
+                </li>
+                <li class="menu-item-pic">
+                  <figure id="cheese-pizza">
+                    <img src="../media/cheese-pizza.jpg" alt="Cheese Pizza" />
+                  </figure>
+                </li>
+                <li class="menu-item-button"><button type="button">Order Now</button></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <ul>
+                <li class="menu-item-header">Pepperoni Pizza</li>
+                <li class="menu-item-description">This gourmet pizza is ideal for
+                  easy late night delivery, complete with mozzarella cheese and
+                  pepperoni.
+                </li>
+                <li class="menu-item-pic">
+                  <figure id="pepperoni-pizza-pic">
+                    <img src="../media/cheese-pizza.jpg" alt="Pepperoni Pizza" />
+                  </figure>
+                </li>
+                <li class="menu-item-button"><button type="button">Order Now</button></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <ul>
+                <li class="menu-item-header">Meat Lover's Pizza</li>
+                <li class="menu-item-description">Meat lover's pizza is the
+                  perfect game day pizza, packed with pepperoni, Italian sausage,
+                  ham, bacon, season pork and beef.
+                </li>
+                <li class="menu-item-pic">
+                  <figure id="meatlovers-pizza-pic">
+                    <img src="../media/meatlovers-pizza.jpg" alt="Meat Lovers Pizza" />
+                  </figure>
+                </li>
+                <li class="menu-item-button"><button type="button">Order Now</button></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <ul>
+                <li class="menu-item-header">Supreme Pizza</li>
+                <li class="menu-item-description">Enjoy this freshly prepared pizza
+                   for family dinner or a group lunch, including pepperoni, seasoned
+                   pork, beef, mushrooms, green bell peppers and red onions.
+                 </li>
+                <li class="menu-item-pic">
+                  <figure id="supreme-pizza-pic">
+                    <img src="../media/supreme-pizza.jpg" alt="Supreme Pizza" />
+                  </figure>
+                </li>
+                <li class="menu-item-button"><button type="button">Order Now</button></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <ul>
+                <li class="menu-item-header">Create Your Own</li>
+                <li class="menu-item-description">Create your own pizza with Pizza
+                  Hut's quality ingredients and crusts. Onions, sausage, peppers,
+                  olives, pineapple—whatever you crave!
+                </li>
+                <li class="menu-item-pic">
+                  <figure id="create-your-own-pizza-pic">
+                    <img src="../media/create-your-own-pizza.jpg" alt="Create Your Own Pizza" />
+                  </figure>
+                </li>
+                <li class="menu-item-button"><button type="button">Order Now</button></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../site.js"></script>
+    </body>
+  </html>
