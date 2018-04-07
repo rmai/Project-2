@@ -241,6 +241,11 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 .js #nav ul {
   display: none;
 }
+#js-nav {
+  position: absolute;
+  right: 0;
+  top: 22px;
+}
 /* NOTE: Credit to https://css-tricks.com/three-line-menu-navicon/ */
 .js .border-menu {
   position: relative;
