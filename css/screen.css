@@ -35,6 +35,10 @@ h1 {
   background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
   /*border: 2px solid white; /* NOTE: diagnostics */
 }
+h2 {
+font-size: 1.777em;
+padding-bottom: 0.5em;
+}
 
 body {
   padding-bottom: 100px;
@@ -74,7 +78,9 @@ footer {
 #header h1 {
   padding-top: 22px;
 }
-
+#about-us h2 {
+  padding-top: 44px;
+}
 #primary header {
   /*border: 2px solid white; /* NOTE: diagnostics */
 }
@@ -106,8 +112,6 @@ border: 2px solid white; /* NOTE: diagnostics*/
   margin-top: 60px;
 }
 #slideshow h2 {
-  font-size: 1.777em;
-  padding-bottom: 0.5em;
   text-align: center;
 }
 #slideshow figure {
