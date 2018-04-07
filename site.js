@@ -5,6 +5,7 @@
     e.preventDefault();
     $('#nav ul').toggleClass('nav-is-visible');
     $('#nav').toggleClass('nav-is-visible');
+    $('#header').toggleClass('nav-is-visible');
   });
   $("#slideshow > figure:gt(0)").hide();
   setInterval(function() {
