@@ -268,12 +268,24 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 .js #nav ul.nav-is-visible:last-child {
   box-shadow: 0  0.2778em 0.556em #000000; /* NOTE: 5px/18 =0.2778 ; 10/18=556  */
 }
+.js #nav.nav-is-visible li {
+  border-bottom: 1px solid black; /* NOTE: diagnostics */
+  box-sizing: border-box;
+  font-size: 22px;
+}
+.js #nav.nav-is-visible a {
+  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
+  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
+  color: white;
+  font-weight: bold;
+}
 @media screen and (min-width: 500px) {
   #order-options {
     padding: 0 15%;
   }
 
 }
+
 /* @media screen and (min-width: 500px) {
   #nav {
     position: absolute;
