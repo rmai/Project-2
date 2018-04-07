@@ -252,6 +252,13 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   border-top: 18px double #000;
   border-bottom: 6px solid #000;
 }
+.js #header.nav-is-visible {
+  box-shadow: none;
+}
+.js #nav.nav-is-visible {
+  margin-top: 50px;
+  padding: 0;
+}
 .js #nav ul.nav-is-visible {
   display: block;
   width: 100%;
