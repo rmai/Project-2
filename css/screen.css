@@ -78,7 +78,8 @@ footer {
 #header h1 {
   padding-top: 22px;
 }
-#about-us h2 {
+#about-us h2,
+article header {
   padding-top: 44px;
 }
 #primary header {
@@ -134,9 +135,6 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   /* NOTE: centers picture inside figure element */
   margin: 0 auto;
 
-}
-#food-choices {
-  margin-top: 44px;
 }
 #food-choices-page body {
     padding-bottom: 350px;
