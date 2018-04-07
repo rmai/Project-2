@@ -1,5 +1,7 @@
 (function($){
 
+  $('html').addClass('js').removeClass('no-js');
+  $('#nav').before('<a id="js-nav" class="border-menu" href="#nav"></a>');
   $("#slideshow > figure:gt(0)").hide();
 
   setInterval(function() {
