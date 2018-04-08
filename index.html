@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="page">
+<html lang="en" id="intro-page" class="no-js">
   <head>
     <title>Seal Team Pizzeria</title>
     <meta charset="UTF-8" />
@@ -10,53 +10,57 @@
   </head>
   <body>
     <header id="header">
-    <!-- <h1></h1> -->
+      <a href="/"><img src="img/sealteam3.png"></a>
+      <h1><a href="/">Seal Team Pizza</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Coupons</a></li>
+          <li><a href="">Location</a></li>
+          <li><a href="">Log In</a></li>
+          <li><a href="">Sign up</a></li>
+        </ul>
+      </nav>
     </header>
     <main id="content">
       <article id="primary">
         <section id="about-us">
-          <header>
-            <a href=""><img id="seal-team-logo" src="img/sealteam3.png"></a>
-            <h1 id="sealteam">Seal Team Pizza</h1>
-          </header>
-          <p id="about">
+          <h2>About Us:</h2>
+          <p>
             Seal Team Pizzeria home of the SEAL pizza, come and get your pizza!
             Established in 2018, our pizzaria is one of Illinois Tech's best pizza places.
           </p>
         </section>
-        <section id="wrapper">
-          <section id="food-choices">
-            <nav id="food-choices-navigation">
-              <ul>
-                <li id="food-choice-pizza"><a href="pizza/">Delivery</a></li>
-                <li id="food-choice-wings"><a href="wings/">Carry out</a></li>
-                <li id="food-choice-sides"><a href="sides/">View Menu</a></li>
-              </ul>
-            </nav>
-          </section>
-          <section id="slideshow" class="two">
-            <h2 id="photos">Hungry?</h2>
-            <figure>
-              <figcaption>Customize your own fresh, hot pizza!</figcaption>
-              <img src="img/pizza.png" alt="pizza-pic"/>
-            </figure>
-            <figure>
-              <figcaption>Try our famous BBQ wings!</figcaption>
-              <img src="img/wings.png" alt="wings-pic"/>
-            </figure>
-            <figure>
-              <figcaption>Delicious pasta for our pasta lovers!</figcaption>
-              <img src="img/pasta.png" alt="pasta-pic"/>
-            </figure>
-            <figure>
-              <figcaption>Grab a soda!</figcaption>
-              <img src="img/drinks.png" alt="drinks-pic"/>
-            </figure>
-            <figure>
-              <figcaption>Don't forget dessert!</figcaption>
-              <img src="img/dessert.png" alt="dessert-pic"/>
-            </figure>
-          </section>
+        <section id="order-options">
+          <nav id="deli-or-carryout">
+            <ul>
+              <li id="order-option-deli"><a href="food-choices/">Delivery</a></li>
+              <li id="order-option-carryout"><a href="food-choices/">Carry out</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id="slideshow" class="two">
+          <h2>Hungry?</h2>
+          <figure>
+            <figcaption>Customize your own fresh, hot pizza!</figcaption>
+            <img src="img/pizza.png" alt="pizza-pic"/>
+          </figure>
+          <figure>
+            <figcaption>Try our famous BBQ wings!</figcaption>
+            <img id="wings" src="img/wings.png" alt="wings-pic"/>
+          </figure>
+          <figure>
+            <figcaption>Delicious pasta for our pasta lovers!</figcaption>
+            <img src="img/pasta.png" alt="pasta-pic"/>
+          </figure>
+          <figure>
+            <figcaption>Grab a soda!</figcaption>
+            <img id="soda" src="img/drinks.png" alt="drinks-pic"/>
+          </figure>
+          <figure>
+            <figcaption>Don't forget dessert!</figcaption>
+            <img src="img/dessert.png" alt="dessert-pic"/>
+          </figure>
         </section>
       </article>
     </main>
