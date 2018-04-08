@@ -197,11 +197,11 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 #food-choices p {
   font-size: 22px;
 }
-#pizza-navigation {
+.inner-nav {
   width: 100%;
   float: left;
 }
-#pizza-navigation ul {
+.inner-nav ul {
   width: 100%;
   padding: 0;
   margin-left: -0.70em;
@@ -210,10 +210,19 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
-#pizza-navigation li {
-  width: 20%;
+.inner-nav li {
   float: left;
 }
+#pizza-navigation li {
+  width: 20%;
+}
+#wings-navigation li{
+  width: 33%;
+}
+#sides-navigation li {
+  width: 50%;
+}
+
 .menu-item {
   margin-top: 22px;
   border: 2px solid black;
