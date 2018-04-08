@@ -36,8 +36,9 @@ h1 {
   /*border: 2px solid white; /* NOTE: diagnostics */
 }
 h2 {
-font-size: 1.777em;
-padding-bottom: 0.5em;
+font-size: 33px;
+padding-bottom:11px;
+line-height: 33px;
 }
 
 body {
