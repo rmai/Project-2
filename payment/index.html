@@ -23,5 +23,41 @@
     </nav>
   </header>
   <main>
-    <form>
-      
+    <form action="#null" method="post" id="payment-form">
+      <ul>
+        <li>
+          <label for="payment-name">Name</label>
+          <input type="text" placeholder="Card Owner" name="Name" id="payment_name" />
+        </li>
+        <li>
+          <label for="payment-email">Email</label>
+          <input type="text" placeholder="Email" name="E-mail Address" id="payment_email" />
+        </li>
+        <li>
+          <label for="payment-zip">ZIP</label>
+          <input type="text" placeholder="ZIP Code" name="Zip Code" id="payment_zip" />
+        </li>
+        <li>
+          <label for="payment-cc">Card Number</label>
+          <input type="text" placeholder="XXXXXXXXXXXXXXXX" name="Credit Card Number" id="payment_cc" />
+        </li>
+        <li>
+          <label for="payment-date">Expiration Date</label>
+          <input type="text" placeholder="XX/XX" name="Expiration Date" id="payment_date" />
+        </li>
+        <li>
+          <label for="payment-cvv">CVV / Security Code</label>
+          <input type="text" placeholder="000" name="CVV" id="payment_cvv" />
+        </li>
+        <li>
+          <input type="submit" value="Checkout" id ="payment-checkout" />
+        </li>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+  </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../site.js"></script>
+</html>
