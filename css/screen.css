@@ -17,11 +17,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  font-size: 1.125em; /* 18 / 16 = 1.125 */
-  line-height: 1.222em; /* 22 / 18 = 1.222*/
+  font-size: 18px; /* 18 / 16 = 1.125 */
+  line-height: 22px; /* 22 / 18 = 1.222*/
   /*font-family: Century Gothic, sans-serif;*/
   background-color: #D7DCDD;
   color: #093755;
+  box-sizing: border-box;
 }
 h1,
 h2,
