@@ -29,76 +29,73 @@
         </header>
         <section id="sauce-cheese-crust">
           <header>
-            <h3>Sauce & Cheese, Crust</h3>
+            <h3><a href="#" class="selected">Sauce & Cheese, Crust</a></h3>
           </header>
-        <ul>
-          <li class="pizza-option-main">
-            <h4>Crust</h4>
-            <li>Hand Tossed Pizza</li>
-            <li>Thin and Crispy</li>
-            <li>Original Stuffed</li>
-            <li>
-              <ul>
-                <li class="pizza-option-secondary"><h5>Pizza Size</h5></li>
-                <li>Personal: 4 Slices</li>
-                <li>Medium: 8 Slices</li>
-                <li>Large: 10 Slices</li>
-              </ul>
+          <ul id="pizza-options" class="selected options-content">
+            <li class="pizza-main-option"><h4>Crust</h4>
+                <ul class="pizza-main-options">
+                  <li>Hand Tossed Pizza</li>
+                  <li class="selected">Thin and Crispy</li>
+                  <li>Original Stuffed</li>
+                </ul>
+                <ol id="pizza-secondary-option-size" class="pizza-secondary-options">
+                  <li><h5>Pizza Size</h5></li>
+                  <li>Personal: 4 Slices</li>
+                  <li class="selected">Medium: 8 Slices</li>
+                  <li>Large: 10 Slices</li>
+                </ol>
             </li>
-          </li>
-          <li class="pizza-option-main">
-            <h4>Sauce</h4>
-            <li>Classic Marinara</li>
-            <li>Premium Crushed Tomato</li>
-            <li>Creamy Garlic Parmesan</li>
-            <li>Barbeque</li>
-            <li>Buffalo</li>
-            <li>
-              <ul>
-                <li class="pizza-option-secondary"><h5>Amount</h5></li>
+            <li class="pizza-main-option"><h4>Sauce</h4>
+              <ul id="pizza-main-option-sauce" class="pizza-main-options">
+                <li class="selected">Classic Marinara</li>
+                <li>Premium Crushed Tomato</li>
+                <li>Creamy Garlic Parmesan</li>
+                <li>Barbeque</li>
+                <li>Buffalo</li>
+              </ul>
+              <ul class="pizza-secondary-options pizza-secondary-option-amount">
+                <li><h5>Amount</h5></li>
                 <li>None</li>
                 <li>Light</li>
-                <li>Regular</li>
+                <li class="selected">Regular</li>
                 <li>Extra</li>
               </ul>
             </li>
-          </li>
-          <li class="pizza-option-main">
-            <h4>Cheese</h4>
-            <li>
-              <ul>
-                <li class="pizza-option-secondary"><h5>Amount</h5></li>
+              <li class="pizza-main-option"><h4>Cheese</h4>
+              <ul class="pizza-main-options">
+                <li class="selected">Cheese</li>
+              </ul>
+              <ol class="pizza-secondary-options pizza-secondary-option-amount">
+                <li><h5>Amount</h5></li>
                 <li>None</li>
                 <li>Light</li>
-                <li>Regular</li>
+                <li class="selected">Regular</li>
                 <li>Extra</li>
-              </ul>
+              </ol>
             </li>
-          </li>
-          <li class="pizza-option-main">
-            <h4>Crust Flavor</h4>
-            <li>No Crust Flavor</li>
-            <li>Garlic Buttery Blend</li>
-            <li>Toasted Parmesean</li>
-            <li>
-              <ul>
-                <li class="pizza-option-secondary"><h5>Special Instructions</h5></li>
-                <li>
-                  <textarea name="sp-instructions" rows="5" cols="50">
-                    Any special instructions?
-                  </textarea>
-                </li>
-              </ul>
-            </li>
+            <li class="pizza-main-option"><h4>Crust Flavor</h4>
+            <ol class="pizza-main-options">
+              <li class="selected">No Crust Flavor</li>
+              <li>Garlic Buttery Blend</li>
+              <li>Toasted Parmesean</li>
+            </ol>
+            <ul id="pizza-secondary-option-sp"class="pizza-secondary-options">
+              <li><h5>Special Instructions</h5></li>
+              <li>
+                <textarea name="sp-instructions" rows="5" cols="50">
+                  Any special instructions?
+                </textarea>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
       <section id="toppings-section">
         <header>
-          <h3>Toppings</h3>
+          <h3><a href="#">Toppings</a></h3>
         </header>
-        <ul>
-          <li class="toppings-section toppings-header"><h4>Meats</h4>
+        <ul id="toppings-content" class="options-content">
+          <li class="toppings-section toppings-header"><h4><a href="#">Meats</a></h4>
             <ul>
               <li>Pepperoni</li>
               <li>Italian Sausauge</li>
@@ -111,7 +108,7 @@
               <li>Pork</li>
             </ul>
           </li>
-          <li class="toppings-section toppings-header"><h4>Veggies</h4>
+          <li class="toppings-section toppings-header"><h4><a href="#">Veggies</a></h4>
             <ul>
               <li>Mushrooms</li>
               <li>Roasted Spinach</li>
