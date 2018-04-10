@@ -81,7 +81,7 @@ footer {
 }
 #about-us h2,
 article header {
-  padding-top: 44px;
+  margin-top: 44px;
 }
 #primary header {
   /*border: 2px solid white; /* NOTE: diagnostics */
