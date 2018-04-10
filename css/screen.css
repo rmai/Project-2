@@ -56,6 +56,13 @@ padding-top: 15px;
 padding-bottom: 15px;
 }
 
+button {
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+}
+
 footer {
   position: absolute;
   width: 100%;
@@ -151,6 +158,15 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   margin-left: 5%;
   border: 2px solid red; /* NOTE: diagnostics */
 }
+
+.menu-item-header {
+  font-weight: bold;
+}
+
+.menu-item-description {
+
+}
+
 .no-js #nav {
   margin-top: 50px;
 }
@@ -228,6 +244,7 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   margin-top: 22px;
   border: 2px solid black;
   padding: 11px 11px;
+  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
 }
  #menu {
   float: none;
