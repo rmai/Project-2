@@ -56,7 +56,10 @@ padding-left: 20px;
 padding-top: 15px;
 padding-bottom: 15px;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 footer {
   position: absolute;
   width: 100%;
