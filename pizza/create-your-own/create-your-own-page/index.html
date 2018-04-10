@@ -18,24 +18,34 @@
     <main id="content">
       <article id="primary">
         <header>
-          <h2>Create Your Own Pizza</h2>
-          <section id="pizza form">
+          <h2>Pizza</h2>
+          <nav id="pizza-navigation" class="inner-nav">
+            <ul>
+              <li><a href="../../popular-pizzas">Popular Pizzas</a></li>
+              <li><a href="../../meats">Meats</a></li>
+              <li><a href="../../chicken">Chicken</a></li>
+              <li><a href="../../veggie">Veggie</a></li>
+              <li><a href="../../create-your-own">Create Your Own</a></li>
+            </ul>
+          </nav>
+          <h2 id="pizza-creation">Create Your Own Pizza</h2>
+          <section id="pizza-form">
             <form>
               <ul>
-                <li>Pizza Size</li>
-                  <input type="radio" name="small">Small</input>
-                  <input type="radio" name="medium">Medium</input>
-                  <input type="radio" name="large">Large</input>
-                <li>Crust Type</li>
-                  <input type="radio" name="thin">Thin</input>
-                  <input type="radio" name="thick">Thick</input>
-                  <input type="radio" name="stuffed">Stuffed</input>
-                <li>Sauce</li>
-                  <input type="radio" name="red">Red Sauce</input>
-                  <input type="radio" name="bbq">BBQ Sauce</input>
-                  <input type="radio" name="pasta">Pasta Sauce</input>
+                <li id="custom-label">Pizza Size</li>
+                  <input type="radio" name="size" value="small">Small</input>
+                  <input type="radio" name="size" value="medium">Medium</input>
+                  <input type="radio" name="size" value="large">Large</input>
+                <li id="custom-label">Crust Type</li>
+                  <input type="radio" name="crust">Thin</input>
+                  <input type="radio" name="crust">Thick</input>
+                  <input type="radio" name="crust">Stuffed</input>
+                <li id="custom-label">Sauce</li>
+                  <input type="radio" name="sauce">Red Sauce</input>
+                  <input type="radio" name="sauce">BBQ Sauce</input>
+                  <input type="radio" name="sauce">Pasta Sauce</input>
                   <input type="checkbox" name="extra" value="extra">Click for extra sauce!</input>
-                <li>Toppings</li>
+                <li id="custom-label">Toppings</li>
                   <input type="checkbox" name="topping" value="pepperoni">Pepperoni</input>
                   <input type="checkbox" name="topping" value="sausage">Sausage</input>
                   <input type="checkbox" name="topping" value="mushrooms">Mushrooms</input>
@@ -47,7 +57,7 @@
                   <input type="checkbox" name="topping" value="bacon">Bacon</input>
                   <input type="checkbox" name="topping" value="jalepenos">Onions</input>
                   <input type="checkbox" name="topping" value="jalepenos">Spinach</input>
-                <li>Special Instructions?</li>
+                <li id="custom-label">Special Instructions?</li>
                   <input type="text" name="instructions">Type Special Instructions Here</input>
             </form>
         </header>
