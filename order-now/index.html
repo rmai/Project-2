@@ -6,7 +6,7 @@
     <meta name="viewport"
     content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link rel="stylesheet" href="../css/screen.css" />
-    <link rel="stylesheet" href="//basehold.it/22">
+    <link rel="stylesheet" href="#//basehold.it/22">
   </head>
   <body>
     <header id="header">
@@ -95,9 +95,16 @@
           <h3><a href="#toppings-content">Toppings</a></h3>
         </header>
         <ul id="toppings-content" class="options-content">
-          <li class="toppings-section toppings-header"><h4><a href="#">Meats</a></h4>
+          <li id="meat-toppings" class="toppings-section"><h4><a href="#">Meats</a></h4>
             <ul>
-              <li>Pepperoni</li>
+              <li><h4>Pepperoni</h4>
+                <ol class="topping-amount selected">
+                  <li><h5>Portion</h5></li>
+                  <li class="selected">Left</li>
+                  <li>Right</li>
+                  <li>Full</li>
+                </ol>
+              </li>
               <li>Italian Sausauge</li>
               <li>Salami</li>
               <li>Meatball</li>
@@ -108,7 +115,7 @@
               <li>Pork</li>
             </ul>
           </li>
-          <li class="toppings-section toppings-header"><h4><a href="#">Veggies</a></h4>
+          <li id="veggie-toppings" class="toppings-section"><h4><a href="#">Veggies</a></h4>
             <ul>
               <li>Mushrooms</li>
               <li>Roasted Spinach</li>
