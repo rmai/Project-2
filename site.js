@@ -61,4 +61,9 @@
       console.log('here');
       $(this).siblings().removeClass('selected');
       $(this).toggleClass('selected');
+    } else if ($(this).is($('.pizza-secondary-options li'))) { //pizza secondary options
+      console.log('here');
+      $(this).siblings().removeClass('selected');
+      $(this).toggleClass('selected');
+    }
   })(jQuery);
