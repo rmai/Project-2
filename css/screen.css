@@ -358,6 +358,25 @@ padding: 11px;
 font-size: 24px;
 line-height: 33px;
 }
+.toppings-section h6 {
+  background-color: gray;
+  font: 22px;
+}
+.topping-amount li:nth-of-type(n+2) {
+  width: 25%;
+  display: inline-block;
+  margin: 11px;
+  padding: 11px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  text-align: center;
+}
 /* State Styles */
 /*
   States of the browser and user access
