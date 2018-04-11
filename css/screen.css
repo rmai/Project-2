@@ -315,6 +315,29 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 #pizza-secondary-option-sp li:nth-of-type(n+2) {
 background-color: #D7DCDD;
 }
+.toppings-section h4 a {
+  position: absolute;
+  top: 132px;
+  width: 20%;
+  text-decoration: underline;
+  color: blue;
+  padding: 0;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  text-align: center;
+}
+#meat-toppings h4 a {
+  left: 10px;
+}
+#veggie-toppings h4 a {
+  right: 10px;
+}
 /* State Styles */
 /*
   States of the browser and user access
