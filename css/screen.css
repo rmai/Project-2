@@ -395,7 +395,9 @@ line-height: 33px;
 .topping-amount li:nth-of-type(n+2).selected {
   background-color: rgba(109,181,195,1);
 }
-
+#pizza-customization-page footer {
+  position: relative;
+}
 /* State Styles */
 /*
   States of the browser and user access
