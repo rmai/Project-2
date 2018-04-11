@@ -57,4 +57,8 @@
     } else if (($(this).is('ol.topping-amount.selected li'))) { // topping amount
         $(this).siblings().removeClass('selected');
         $(this).toggleClass('selected');
+    } else if ($(this).is($('.pizza-main-options li'))) { //pizza main option
+      console.log('here');
+      $(this).siblings().removeClass('selected');
+      $(this).toggleClass('selected');
   })(jQuery);
