@@ -173,10 +173,18 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   display: block;
 }
 
-#custom-label {
-  font-weight: bold;
+#custom-toppings,
+#custom-size,
+#custom-type,
+#custom-sauce {
+  padding-top: 1.222em;
+  font-weight: normal;
+  width: 50%;
+  column-count: 2
 }
-
+.custom-label {
+  font-weight: bold
+}
 .menu-item-header {
   font-weight: bold;
 }
