@@ -66,4 +66,9 @@
       $(this).siblings().removeClass('selected');
       $(this).toggleClass('selected');
     }
+    //  $(this).addClass('selected');
+  });
   })(jQuery);
+
+  // console.log($(this).text());
+  // console.log($(this).attr('href'));
