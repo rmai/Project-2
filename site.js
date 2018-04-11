@@ -42,4 +42,9 @@
       $('#meat-toppings a[href="#meats"]').removeClass('selected');
       $('#meat-toppings').removeClass('selected');
       $('#veggie-toppings').addClass('selected');
+    } else if ($(this).attr('id') === 'meat-toppings') { //meat topping header
+        $('#meat-toppings a[href="#meats"]').addClass('selected');
+        $('#veggie-toppings a[href="#veggies"]').removeClass('selected');
+        $('#veggie-toppings').removeClass('selected');
+        $('#meat-toppings').addClass('selected');
   })(jQuery);
