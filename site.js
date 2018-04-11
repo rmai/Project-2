@@ -54,9 +54,7 @@
     } else if ($(this).attr('class') === 'veggie-item') { //veggie item
         $(this).children('h5').children('a').toggleClass('selected');
         $(this).find('.topping-amount').toggleClass('selected');
-    } else if (($(this).is('ol.topping-amount.selected li'))) {
+    } else if (($(this).is('ol.topping-amount.selected li'))) { // topping amount
         $(this).siblings().removeClass('selected');
         $(this).toggleClass('selected');
-
-
   })(jQuery);
