@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="food-choices-page" class="no-js">
+<html lang="en" id="pizzas" class="no-js">
   <head>
     <title>Seal Team Pizzeria</title>
     <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
       <nav id="nav">
         <ul>
           <li><a href="">Menu</a></li>
-          <li><a href="">Coupons</a></li>
+          <li><a href="../coupons">Coupons</a></li>
           <li><a href="">Location</a></li>
           <li><a href="">My Cart</a></li>
         </ul>
@@ -23,21 +23,20 @@
     </header>
     <main id="content">
       <article id="primary">
-        <section id="food-choices">
-          <header>
-            <h2>Food Choices</h2>
-            <p>Pick a category to get started with our order</p>
-          </header>
-          <nav id="food-choices-navigation">
-            <ul>
-              <li id="food-choice-pizza"><a href="../pizza/">Pizza</a></li>
-              <li id="food-choice-wings"><a href="../wings/">Wings</a></li>
-              <li id="food-choice-sides"><a href="../sides/">Sides</a></li>
-              <li id="food-choice-pasta"><a href="../pasta/">Pasta</a></li>
-              <li id="food-choice-dessert"><a href="../desserts/">Desserts</a></li>
-              <li id="food-choice-drinks"><a href="../drinks/">Drinks</a></li>
-            </ul>
-          </nav>
+        <header>
+          <section id="coupons">
+            <h2>Current Coupons</h2>
+            <p id="current-coupons">
+              Try one of these coupons codes at the checkout for a discount!
+            </p>
+          </section>
+        </header>
+        <section id="coupon-codes">
+          <ul>
+            <li id="coupon">$5 off all custom pizza!: MEHUNGRY</li>
+            <li id="coupon">$2 off any pizza!: MONEY</li>
+            <li id="coupon">No Delivery Charge!: DELIVERYBOY</li>
+          </ul>
         </section>
       </article>
     </main>
