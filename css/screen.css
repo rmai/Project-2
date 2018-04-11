@@ -338,8 +338,17 @@ background-color: #D7DCDD;
 #veggie-toppings h4 a {
   right: 10px;
 }
+#toppings-content h4 a.selected {
+  background-color: gray;
+}
 #toppings-content {
   margin-top: 66px;
+}
+.toppings-section ul {
+  display: none;
+}
+.toppings-section.selected ul {
+  display: block;
 }
 .toppings-section ul > li {
   padding: 11px;
@@ -362,6 +371,13 @@ line-height: 33px;
   background-color: gray;
   font: 22px;
 }
+.topping-amount {
+  display: none;
+  margin-top: 22px;
+}
+.topping-amount.selected {
+  display: block;
+}
 .topping-amount li:nth-of-type(n+2) {
   width: 25%;
   display: inline-block;
@@ -377,6 +393,10 @@ line-height: 33px;
   box-sizing: border-box;
   text-align: center;
 }
+.topping-amount li:nth-of-type(n+2).selected {
+  background-color: rgba(109,181,195,1);
+}
+
 /* State Styles */
 /*
   States of the browser and user access
