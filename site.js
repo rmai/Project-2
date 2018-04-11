@@ -34,4 +34,12 @@
         console.log(this);
       }
   });
+  $('li').on('click', function(e) {
+    e.preventDefault();
+    console.log($(this));
+    if ($(this).attr('id') === 'veggie-toppings') {   //Veggie header
+      $('#veggie-toppings a[href="#veggies"]').addClass('selected');
+      $('#meat-toppings a[href="#meats"]').removeClass('selected');
+      $('#meat-toppings').removeClass('selected');
+      $('#veggie-toppings').addClass('selected');
   })(jQuery);
