@@ -189,6 +189,14 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   margin-top: 0.5em;
 }
 
+#checkout {
+  margin-top: 1em;
+}
+
+#payment-form {
+  margin-top: 0.5em;
+}
+
 #custom-toppings,
 #custom-size,
 #custom-type,

@@ -22,6 +22,7 @@
     </nav>
   </header>
   <main>
+    <h2 id="checkout">Checkout</h2>
     <form action="#null" method="post" id="payment-form">
       <ul>
         <li>
@@ -47,6 +48,10 @@
         <li>
           <label for="payment-cvv">CVV / Security Code</label>
           <input type="text" placeholder="000" name="CVV" id="payment_cvv" />
+        </li>
+        <li>
+          <label for="coupon-code-entry">Coupon Code</label>
+          <input type="text" placeholder="enter code here" name="coupon_code" id="coupon_code" />
         </li>
         <li>
           <input type="submit" value="Checkout" id ="payment-checkout" />
