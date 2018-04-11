@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" id="payment">
+<head>
+  <title>Seal Team Pizzeria</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+  content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" href="../css/screen.css" />
+  <link rel="stylesheet" href="//basehold.it/22">
+</head>
+<body>
+  <header id="header">
+    <a href="../"><img src="../img/sealteam3.png"></a>
+    <h1><a href="../">Seal Team Pizza</a></h1>
+    <nav id="nav">
+      <ul>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Coupons</a></li>
+        <li><a href="">Location</a></li>
+        <li><a href="">Log In</a></li>
+        <li><a href="">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="#null" method="post" id="payment-form">
+      <ul>
+        <li>
+          <label for="payment-name">Name</label>
+          <input type="text" placeholder="Card Owner" name="Name" id="payment_name" />
+        </li>
+        <li>
+          <label for="payment-email">Email</label>
+          <input type="text" placeholder="Email" name="E-mail Address" id="payment_email" />
+        </li>
+        <li>
+          <label for="payment-zip">ZIP</label>
+          <input type="text" placeholder="ZIP Code" name="Zip Code" id="payment_zip" />
+        </li>
+        <li>
+          <label for="payment-cc">Card Number</label>
+          <input type="text" placeholder="XXXXXXXXXXXXXXXX" name="Credit Card Number" id="payment_cc" />
+        </li>
+        <li>
+          <label for="payment-date">Expiration Date</label>
+          <input type="text" placeholder="XX/XX" name="Expiration Date" id="payment_date" />
+        </li>
+        <li>
+          <label for="payment-cvv">CVV / Security Code</label>
+          <input type="text" placeholder="000" name="CVV" id="payment_cvv" />
+        </li>
+        <li>
+          <input type="submit" value="Checkout" id ="payment-checkout" />
+        </li>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+  </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../site.js"></script>
+</html>
