@@ -338,6 +338,26 @@ background-color: #D7DCDD;
 #veggie-toppings h4 a {
   right: 10px;
 }
+#toppings-content {
+  margin-top: 66px;
+}
+.toppings-section ul > li {
+  padding: 11px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+.toppings-section ul > li:first-of-type {
+  border-top: 1px solid black;
+}
+.toppings-section ul > li:last-of-type {
+  border-bottom: none;
+}
+.toppings-section h5.selected {
+background-color: rgba(109,181,195,1);
+padding: 11px;
+font-size: 24px;
+line-height: 33px;
+}
 /* State Styles */
 /*
   States of the browser and user access
