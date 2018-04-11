@@ -16,6 +16,22 @@
       .end()
       .appendTo('#slideshow');
   }, 3000);
-
-
+  $('#pizza-customization-page h3 a').on('click', function(e) {
+    e.preventDefault();
+    $('#pizza-customization-page h3 a').removeClass('selected');
+    $('.options-content').removeClass('selected');
+    console.log(this);
+    console.log($(this).attr('href'));
+    if ($(this).attr('href') === "#sauce-cheese-crust") {
+      console.log("here");
+        $('#sauce-cheese-crust h3 a').addClass('selected');
+        $('#pizza-options').addClass('selected');
+        console.log(this);
+    } else if ($(this).attr('href') === "#toppings-content") {
+      console.log("not here");
+        $('#toppings-section h3 a').addClass('selected');
+        $('#toppings-content').addClass('selected');
+        console.log(this);
+      }
+  });
   })(jQuery);
