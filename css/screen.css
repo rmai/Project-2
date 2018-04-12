@@ -433,7 +433,8 @@ html:not(.pizza-page) .button {
   background-color: rgba(103,104,106,0.6); /* NOTE:  */
   color: white;
 }
-.custom-pizza {
+.custom-pizza,
+html:not(.pizza-page) .button {
   right: 30%
 }
 .menu-item-header {
