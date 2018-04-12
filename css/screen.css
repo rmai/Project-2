@@ -409,7 +409,8 @@ line-height: 33px;
   height: 330px;
 }
 .pizza-button ul li,
-.custom-pizza {
+.custom-pizza,
+html:not(.pizza-page) .button {
   width: 40%;
   display: inline-block;
   margin: 11px;
