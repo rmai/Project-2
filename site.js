@@ -76,6 +76,13 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     }
     //  $(this).addClass('selected');
   });
+
+  $('.button').on('click' , function(e) {
+    e.preventDefault();
+    if($(this).text() === "Customize") {
+      console.log("heu");
+    }
+  });
   })(jQuery);
 
   // console.log($(this).text());
