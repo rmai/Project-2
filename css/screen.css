@@ -517,6 +517,11 @@ line-height: 33px;
     padding: 0 15%;
   }
   #pizza-customization-page article {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+}
     margin-left: 5%;
     margin-right: 5%;
   }
