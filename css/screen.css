@@ -404,6 +404,51 @@ line-height: 33px;
 #pizza-customization-page footer {
   position: relative;
 }
+.menu-item {
+  position: relative;
+  height: 330px;
+}
+.pizza-button ul li,
+.custom-pizza {
+  width: 40%;
+  display: inline-block;
+  margin: 11px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(109,181,195,1);
+  position: absolute;
+  bottom: 11px;
+}
+.pizza-button ul li:nth-of-type(n+2),
+.custom-pizza {
+  right: 5%;
+  background-color: rgba(103,104,106,0.6); /* NOTE:  */
+  color: white;
+}
+.custom-pizza {
+  right: 30%
+}
+.menu-item-header {
+  font-size: 22px;
+  font-weight: bold;
+}
+.menu-item-pic img{
+  position: absolute;
+  right: 5px;
+  top: 44px;
+  height: 45%;
+}
+.menu-item-description {
+  width: 55%;
+  margin-top: 11px;
+}
 /* State Styles */
 /*
   States of the browser and user access
