@@ -463,6 +463,12 @@ html:not(.pizza-page) .button {
   padding: 5.5px;
   width: 40%;
 }
+#ready {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: center;
+}
 /* State Styles */
 /*
   States of the browser and user access
