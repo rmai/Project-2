@@ -450,6 +450,15 @@ html:not(.pizza-page) .button {
   width: 55%;
   margin-top: 11px;
 }
+.cost {
+  font-weight: bold;
+  display: block;
+  margin-top: 11px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 5.5px;
+  width: 40%;
+}
 /* State Styles */
 /*
   States of the browser and user access
