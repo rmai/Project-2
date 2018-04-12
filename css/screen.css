@@ -408,6 +408,9 @@ line-height: 33px;
   position: relative;
   height: 330px;
 }
+#pasta-page .menu-item {
+  height: 398px;
+}
 .pizza-button ul li,
 .custom-pizza,
 html:not(.pizza-page) .button {
