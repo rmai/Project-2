@@ -30,7 +30,7 @@
       }
   });
 
-  $('li').on('click', function(e) {
+  $('#pizza-customization-page li').on('click', function(e) {
     e.preventDefault();
     console.log($(this));
     if ($(this).attr('id') === 'veggie-toppings') {   //Veggie header
