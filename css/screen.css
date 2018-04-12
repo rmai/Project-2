@@ -529,9 +529,23 @@ line-height: 33px;
   }
 
 }
+@media screen and (min-width: 750px) {
+  .menu-item {
+    width: 43%;
+    height: 354px;
+    float: left;
   }
-
+  .menu-item:nth-of-type(2n){
+    margin-left: 2%;
+  }
+  .menu-item-pic img{
+    width: 40%;
+  }
+  body {
+    padding-bottom: 1250px;
+  }
 }
+
 
 /* @media screen and (min-width: 500px) {
   #nav {
