@@ -522,6 +522,8 @@ line-height: 33px;
   }
 
 }
+@media screen and (min-width: 600px) {
+  #menu {
     margin-left: 5%;
     margin-right: 5%;
   }
