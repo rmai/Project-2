@@ -49,14 +49,10 @@ main {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
-
-ul {
-
-}
-
 ul a {
 display: block;
 text-decoration: none;
+padding-left: 20px;
 padding-top: 15px;
 padding-bottom: 15px;
 }
@@ -91,9 +87,6 @@ footer {
 #about-us h2,
 article header {
 margin-top: 44px;
-}
-#ready {
-  text-align: center;
 }
 #order-options li,
 #food-choices-navigation li {
@@ -151,52 +144,6 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 #food-choices-navigation li:nth-child(even) {
   margin-left: 5%;
 }
-
-#pizza-creation {
-  margin-top: 2.6em;
-}
-
-#pizza-form {
-  margin-top: 0.5em;
-  display: block;
-}
-
-#current-coupons {
-  font-weight: bold;
-}
-
-#coupon {
-  margin-top: 0.5em;
-}
-
-#checkout {
-  margin-top: 1em;
-}
-
-#payment-form {
-  margin-top: 0.5em;
-}
-
-#custom-toppings,
-#custom-size,
-#custom-type,
-#custom-sauce {
-  padding-top: 1.222em;
-  font-weight: normal;
-  width: 50%;
-  column-count: 2
-}
-.custom-label {
-  font-weight: bold
-}
-.menu-item-header {
-  font-weight: bold;
-}
-
-.menu-item-description {
-
-}
-
 .no-js #nav {
   margin-top: 50px;
 }
@@ -233,7 +180,7 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-bottom: 300px;
 }
 #food-choices h2,
-#pizzas h2 {
+#pizzas-page h2 {
   font-size: 33px;
   line-height: 33px;
   padding-bottom: 11px;
@@ -269,7 +216,6 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   margin-top: 22px;
   border: 2px solid black;
   padding: 11px 11px;
-  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
 }
  #menu {
   float: none;
@@ -398,6 +344,10 @@ background-color: #D7DCDD;
 #veggie-toppings h4 a {
   right: 10px;
 }
+.custom-end-btn {
+  position: relative;
+  bottom: -85px;
+}
 #toppings-content h4 a.selected {
   background-color: gray;
 }
@@ -455,8 +405,72 @@ line-height: 33px;
 .topping-amount li:nth-of-type(n+2).selected {
   background-color: rgba(109,181,195,1);
 }
-#pizza-customization-page footer {
+.menu-item {
   position: relative;
+  height: 330px;
+}
+#pasta-page .menu-item {
+  height: 398px;
+}
+.pizza-button ul li,
+.custom-pizza,
+html:not(.pizza-page) .button,
+.custom-end-btn a {
+  width: 40%;
+  display: inline-block;
+  margin: 11px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(109,181,195,1);
+  position: absolute;
+  bottom: 11px;
+}
+.pizza-button ul li:nth-of-type(n+2),
+.custom-pizza {
+  right: 5%;
+  background-color: rgba(103,104,106,0.6); /* NOTE:  */
+  color: white;
+}
+.custom-pizza,
+html:not(.pizza-page) .button,
+.custom-end-btn a {
+  right: 30%
+}
+.menu-item-header {
+  font-size: 22px;
+  font-weight: bold;
+}
+.menu-item-pic img{
+  position: absolute;
+  right: 5px;
+  top: 66px;
+  height: 45%;
+}
+.menu-item-description {
+  width: 55%;
+  margin-top: 11px;
+}
+.cost {
+  font-weight: bold;
+  display: block;
+  margin-top: 11px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 5.5px;
+  width: 40%;
+}
+#ready {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: center;
 }
 /* State Styles */
 /*
@@ -526,26 +540,34 @@ line-height: 33px;
     padding: 0 15%;
   }
   #pizza-customization-page article {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-}
-@media screen and (min-width: 500px) {
-  #pizza-customization-page article {
     margin-left: 10%;
     margin-right: 10%;
   }
 
 }
-
-@media screen and (min-width: 725px) {
+@media screen and (min-width: 600px) {
+  #menu {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
 }
+@media screen and (min-width: 750px) {
+  .menu-item {
+    width: 43%;
+    height: 354px;
+    float: left;
+  }
+  .menu-item:nth-of-type(2n){
+    margin-left: 2%;
+  }
+  .menu-item-pic img{
+    width: 40%;
+  }
+  body {
+    padding-bottom: 1250px;
+  }
 
-@media screen and (min-width: 850px) {
-
-}
 
 /* @media screen and (min-width: 500px) {
   #nav {
