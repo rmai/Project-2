@@ -223,11 +223,12 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       for(var i = 0; i < form_array.length; i++) {
         if(!form_array[i].regex.test(form_array[i].value)) {
           isValid = false;
-          logEvent("Invalid " + form_array[i].name);
+          logEvent("Empty or wrong " + form_array[i].name);
         }
       }
       return isValid;
     };
+    
   })(jQuery);
 
   // console.log($(this).text());
