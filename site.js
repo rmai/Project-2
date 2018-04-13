@@ -26,8 +26,8 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     if ($(this).attr('href') === "#sauce-cheese-crust") { //disply chesse,sauce,etc
         $('#sauce-cheese-crust h3 a').addClass('selected');
         $('#pizza-options').addClass('selected');
-        console.log(this);
-    } else if ($(this).attr('href') === "#toppings-content") { //display toppings
+    } else if (($(this).attr('href') === "#to-toppings") ||
+        ($(this).attr('href') === "#toppings-content") ) { //display toppings
         $('#toppings-section h3 a').addClass('selected');
         $('#toppings-content').addClass('selected');
       }
@@ -35,7 +35,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
 
   $('#pizza-customization-page li').on('click', function(e) {
     e.preventDefault();
-    console.log($(this));
+    console.log(this);
     if ($(this).attr('id') === 'veggie-toppings') {   //Veggie header
       $('#veggie-toppings a[href="#veggies"]').addClass('selected');
       $('#meat-toppings a[href="#meats"]').removeClass('selected');
@@ -66,17 +66,126 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         $(this).siblings().removeClass('selected');
         $(this).toggleClass('selected');
     } else if ($(this).is($('.pizza-main-options li'))) { //pizza main option
-      console.log('here');
       $(this).siblings().removeClass('selected');
       $(this).toggleClass('selected');
     } else if ($(this).is($('.pizza-secondary-options li'))) { //pizza secondary options
-      console.log('here');
       $(this).siblings().removeClass('selected');
       $(this).toggleClass('selected');
+    } else if ($(this).children('a').attr('href') === '#to-toppings') { // Topping button on chesse, suace page
+      console.log('TO TOPPINGS');
+        $('#pizza-customization-page h3 a').removeClass('selected');
+        $('.options-content').removeClass('selected');
+        $('#toppings-section h3 a').addClass('selected');
+        $('#toppings-content').addClass('selected');
+        $('html,body').scrollTop(0);
     }
     //  $(this).addClass('selected');
   });
 
+  $('.button').on('click' , function(e) {
+    var items= [];
+    var toppings= [];
+    var pizza_options= [];
+    var pageID= $(this).closest('html').attr('id');
+    var pageClass= $(this).closest('html').attr('class');
+    console.log(pageClass);
+    var cost= $(this).attr('value');
+    var name= $(this).attr('name');
+    e.preventDefault();
+    console.log('Button hit');
+    console.log(name);
+    console.log(cost);
+    if(pageID === 'drinks-page') {
+      console.log('DRINKS');
+      var item= {
+        type: 'Drinks',
+        cost: cost,
+        name: name
+      };
+    } else if (pageID === 'desserts-page') {
+      console.log('DESSERTS');
+      var item= {
+        type: 'Desserts',
+        cost: cost,
+        name: name
+      };
+    }else if (pageID === 'pasta-page') {
+      console.log('PASTA');
+      var item= {
+        type: 'Pasta',
+        cost: cost,
+        name: name
+      };
+    }else if ($(this).closest('html').hasClass('sides-page')) {
+      console.log('SIDES');
+      var item= {
+        type: 'Sides',
+        cost: cost,
+        name: name
+      };
+    }else if ($(this).closest('html').hasClass('wings-page')) {
+      console.log('WINGS');
+      var item= {
+        type: 'Wings',
+        cost: cost,
+        name: name
+      };
+    }else if ($(this).closest('html').hasClass('pizza-page')) {
+      console.log('PIZZA');
+      var item= {
+        type: 'Pizza',
+        cost: cost,
+        name: name
+      };
+    }else if ($(this).text() === "Customize") {
+      console.log("CUSTOMIZE");
+      window.location.href = '/order-now/index.html';
+    }else if ($(this).closest('li').attr('id') === "toppings-add-btn") {  //add cart btn
+      if($('.topping-amount li:nth-of-type(n+2)').hasClass('selected')) { //Grabbing selected toppings
+        var item= {
+          type: 'Pizza',
+          cost: 10.50,
+          name: 'Custom Pizza',
+          toppings: ''
+        };
+        console.log(item.cost);
+        $('.topping-amount li:nth-of-type(n+2).selected').each(function() {
+          var topping= {
+            name: '',
+            amount: ''
+          };
+          topping.name = $(this).parent().parent().children('h5').text();
+          topping.amount = $(this).children('a').text();
+          toppings.push(topping);
+        });
+        toppings.forEach(function(entry) {
+          var top_name = '';
+          var top_amount= '';
+          top_name += topping.name + ';';
+          top_amount += topping.amount + ';';
+          topping.name = top_name;
+          topping.amount = top_amount;
+        });
+        console.log(toppings);
+      } else if ($('#pizza-options li').hasClass('selected')) { //Pizaa options
+        $('.pizza-main-options li.selected').each(function (){
+          var pizza_option= {
+            name: '',
+            option: '',
+            instructions: ''
+          };
+          pizza_option.name =  $(this).parent().parent().children('h4').text();
+          pizza_option.option = $(this).children('a').text();
+          pizza_option.instructions = $('textarea').val();
+          pizza_options.push(pizza_option);
+        });
+        console.log(pizza_options);
+      }
+
+      //  if(($('.topping-amount li:nth-of-type(n+2).selected').closest('html h5')))
+      //window.location.href = '/food'-choices/index.html';
+  }
+  });
   var validPayment = function(form_array) {
       // check if payment fields are empty
       var isValid = true;
@@ -96,7 +205,6 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       }
       return isValid;
     };
-
   })(jQuery);
 
   // console.log($(this).text());
