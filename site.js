@@ -93,6 +93,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     var count = docCookies.keys().length-1;
     var item_count;
     var item;
+    console.log(this);
     e.preventDefault();
     if(pageID === 'drinks-page') {
       console.log('DRINKS');
@@ -134,13 +135,13 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         name: name
       };
       items.push(item);
-    }else if ($(this).closest('html').hasClass('pizza-page')) {
-      console.log('PIZZA');
-      item= {
-        type: 'Pizza',
-        cost: cost,
-        name: name
-      };
+      // }else if ($(this).closest('html').hasClass('pizza-page')) {
+      //   console.log('PIZZA');
+      //   item= {
+      //     type: 'Pizza',
+      //     cost: cost,
+      //     name: name
+      //   };
       items.push(item);
       setItem(item);
       getItem(count);
@@ -167,23 +168,25 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         });
 
         console.log(toppings);
-      } else if ($('#pizza-options li').hasClass('selected')) { // Pizaa options
-        $('.pizza-main-options li.selected').each(function (){
-          var pizza_option= {
-            name: '',
-            option: '',
-            instructions: ''
-          };
-          pizza_option.name =  $(this).parent().parent().children('h4').text();
-          pizza_option.option = $(this).children('a').text();
-          pizza_option.instructions = $('textarea').val();
-          pizza_options.push(pizza_option);
-        });
-        console.log(pizza_options);
       }
-      //  if(($('.topping-amount li:nth-of-type(n+2).selected').closest('html h5')))
-      window.location.href = '/food'-choices/index.html;
+      window.location.href = '/food-choices/index.html';
+    }else if ($('#pizza-options li').hasClass('selected')) { // Pizaa options
+      $('.pizza-main-options li.selected').each(function (){
+        var pizza_option= {
+          name: '',
+          option: '',
+          instructions: ''
+        };
+        pizza_option.name =  $(this).parent().parent().children('h4').text();
+        pizza_option.option = $(this).children('a').text();
+        pizza_option.instructions = $('textarea').val();
+        pizza_options.push(pizza_option);
+      });
+      console.log(pizza_options);
+    } else {
+      window.location.href = '/food-choices/index.html';
     }
+    //  if(($('.topping-amount li:nth-of-type(n+2).selected').closest('html h5'))
     function setItem(item) {
       var _item = item.type + ',' + item.name + ',' + item.cost;
       console.log(count);
@@ -210,12 +213,12 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     var isValid = true;
     var i = 0;
 
-    form_array[0].regex = /.*/;
-    form_array[1].regex = /^[^\s@]+@[^\s@]+$/;
-    form_array[2].regex = /^\d{5}$/;
-    form_array[3].regex = /^\d{15,16}$/;
-    form_array[4].regex = /^\d{2}\/\d{2}$/;
-    form_array[5].regex = /^\d{3,4}$/;
+    // form_array[0].regex = /.*/;
+    // form_array[1].regex = /^[^\s@]+@[^\s@]+$/;
+    // form_array[2].regex = /^\d{5}$/;
+    // form_array[3].regex = /^\d{15,16}$/;
+    // form_array[4].regex = /^\d{2}\/\d{2}$/;
+    // form_array[5].regex = /^\d{3,4}$/;
 
     for(i = 0; i < form_array.length; i++) {
       if(!form_array[i].regex.test(form_array[i].value)) {
