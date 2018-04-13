@@ -88,13 +88,11 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     var pizza_options= [];
     var pageID= $(this).closest('html').attr('id');
     var pageClass= $(this).closest('html').attr('class');
-    console.log(pageClass);
     var cost= $(this).attr('value');
     var name= $(this).attr('name');
+    var count = docCookies.keys().length-1;
+    var item_count = 0;
     e.preventDefault();
-    console.log('Button hit');
-    console.log(name);
-    console.log(cost);
     if(pageID === 'drinks-page') {
       console.log('DRINKS');
       var item= {
@@ -102,6 +100,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         cost: cost,
         name: name
       };
+      items.push(item);
     } else if (pageID === 'desserts-page') {
       console.log('DESSERTS');
       var item= {
@@ -109,6 +108,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         cost: cost,
         name: name
       };
+      items.push(item);
     }else if (pageID === 'pasta-page') {
       console.log('PASTA');
       var item= {
@@ -116,6 +116,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         cost: cost,
         name: name
       };
+      items.push(item);
     }else if ($(this).closest('html').hasClass('sides-page')) {
       console.log('SIDES');
       var item= {
@@ -123,6 +124,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         cost: cost,
         name: name
       };
+      items.push(item);
     }else if ($(this).closest('html').hasClass('wings-page')) {
       console.log('WINGS');
       var item= {
@@ -130,6 +132,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         cost: cost,
         name: name
       };
+      items.push(item);
     }else if ($(this).closest('html').hasClass('pizza-page')) {
       console.log('PIZZA');
       var item= {
@@ -137,6 +140,9 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         cost: cost,
         name: name
       };
+      items.push(item);
+      setItem(item);
+      getItem(count);
     }else if ($(this).text() === "Customize") {
       console.log("CUSTOMIZE");
       window.location.href = '/order-now/index.html';
@@ -158,14 +164,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
           topping.amount = $(this).children('a').text();
           toppings.push(topping);
         });
-        toppings.forEach(function(entry) {
-          var top_name = '';
-          var top_amount= '';
-          top_name += topping.name + ';';
-          top_amount += topping.amount + ';';
-          topping.name = top_name;
-          topping.amount = top_amount;
-        });
+
         console.log(toppings);
       } else if ($('#pizza-options li').hasClass('selected')) { //Pizaa options
         $('.pizza-main-options li.selected').each(function (){
@@ -181,13 +180,37 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         });
         console.log(pizza_options);
       }
-
       //  if(($('.topping-amount li:nth-of-type(n+2).selected').closest('html h5')))
       //window.location.href = '/food'-choices/index.html';
   }
+  function setItem(item) {
+    var _item = item.type + ',' + item.name + ',' + item.cost;
+    console.log(count);
+    item_count++;
+    count++;
+    console.log(count.toString());
+    docCookies.setItem(count.toString(),_item);
+    console.log(_item);
+  }
+  function getItem(count) {
+    for(var i = 0; i < count; i++) {
+      var _count = count;
+      console.log(docCookies.getItem(_count.toString()));
+      _count++;
+    }
+  }
+  function removeItem(count) {
+    for(var i = 0; i < count; i++) {
+      var _count = count;
+      console.log(docCookies.removeItem(_count.toString()));
+      _count++;
+    }
+  }
+
+
   });
   var validPayment = function(form_array) {
-      // check if payment fields are empty
+      // make sure the following fields are not empty
       var isValid = true;
 
       form_array[0].regex = /.*/;
@@ -200,11 +223,12 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       for(var i = 0; i < form_array.length; i++) {
         if(!form_array[i].regex.test(form_array[i].value)) {
           isValid = false;
-          logEvent("Invalid " + form_array[i].name);
+          logEvent("Empty or wrong " + form_array[i].name);
         }
       }
       return isValid;
     };
+    
   })(jQuery);
 
   // console.log($(this).text());
