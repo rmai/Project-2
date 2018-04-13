@@ -147,7 +147,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       getItem(count);
     }else if ($(this).text() === "Customize") {
       console.log("CUSTOMIZE");
-      window.location.href = '/order-now/index.html';
+      window.location.href = 'https://sealteam362.github.io/Project-2/order-now/';
     }else if ($(this).closest('li').attr('id') === "toppings-add-btn") {  // add cart btn
       if($('.topping-amount li:nth-of-type(n+2)').hasClass('selected')) { // Grabbing selected toppings
         item= {
@@ -184,7 +184,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       });
       console.log(pizza_options);
     } else {
-      window.location.href = '/food-choices/index.html';
+      window.location.href = 'https://sealteam362.github.io/Project-2/food-choices/';
     }
     //  if(($('.topping-amount li:nth-of-type(n+2).selected').closest('html h5'))
     function setItem(item) {
