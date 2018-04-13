@@ -83,10 +83,60 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   });
 
   $('.button').on('click' , function(e) {
+    var items= [];
+    var toppings= [];
+    var pizza_options= [];
+    var pageID= $(this).closest('html').attr('id');
+    var pageClass= $(this).closest('html').attr('class');
+    console.log(pageClass);
+    var cost= $(this).attr('value');
+    var name= $(this).attr('name');
     e.preventDefault();
-    if($(this).text() === "Customize") {
-      console.log("heu");
-    }
+    console.log('Button hit');
+    console.log(name);
+    console.log(cost);
+    if(pageID === 'drinks-page') {
+      console.log('DRINKS');
+      var item= {
+        type: 'Drinks',
+        cost: cost,
+        name: name
+      };
+    } else if (pageID === 'desserts-page') {
+      console.log('DESSERTS');
+      var item= {
+        type: 'Desserts',
+        cost: cost,
+        name: name
+      };
+    }else if (pageID === 'pasta-page') {
+      console.log('PASTA');
+      var item= {
+        type: 'Pasta',
+        cost: cost,
+        name: name
+      };
+    }else if ($(this).closest('html').hasClass('sides-page')) {
+      console.log('SIDES');
+      var item= {
+        type: 'Sides',
+        cost: cost,
+        name: name
+      };
+    }else if ($(this).closest('html').hasClass('wings-page')) {
+      console.log('WINGS');
+      var item= {
+        type: 'Wings',
+        cost: cost,
+        name: name
+      };
+    }else if ($(this).closest('html').hasClass('pizza-page')) {
+      console.log('PIZZA');
+      var item= {
+        type: 'Pizza',
+        cost: cost,
+        name: name
+      };
   });
   var validPayment = function(form_array) {
       // make sure the following fields are not empty
