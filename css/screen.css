@@ -344,6 +344,10 @@ background-color: #D7DCDD;
 #veggie-toppings h4 a {
   right: 10px;
 }
+.custom-end-btn {
+  position: relative;
+  bottom: -85px;
+}
 #toppings-content h4 a.selected {
   background-color: gray;
 }
@@ -401,9 +405,6 @@ line-height: 33px;
 .topping-amount li:nth-of-type(n+2).selected {
   background-color: rgba(109,181,195,1);
 }
-#pizza-customization-page footer {
-  position: relative;
-}
 .menu-item {
   position: relative;
   height: 330px;
@@ -413,7 +414,8 @@ line-height: 33px;
 }
 .pizza-button ul li,
 .custom-pizza,
-html:not(.pizza-page) .button {
+html:not(.pizza-page) .button,
+.custom-end-btn a {
   width: 40%;
   display: inline-block;
   margin: 11px;
@@ -437,7 +439,8 @@ html:not(.pizza-page) .button {
   color: white;
 }
 .custom-pizza,
-html:not(.pizza-page) .button {
+html:not(.pizza-page) .button,
+.custom-end-btn a {
   right: 30%
 }
 .menu-item-header {
@@ -447,7 +450,7 @@ html:not(.pizza-page) .button {
 .menu-item-pic img{
   position: absolute;
   right: 5px;
-  top: 44px;
+  top: 66px;
   height: 45%;
 }
 .menu-item-description {
