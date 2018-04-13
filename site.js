@@ -183,7 +183,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   }
   });
   var validPayment = function(form_array) {
-      // make sure the following fields are not empty
+      // check if payment fields are empty
       var isValid = true;
 
       form_array[0].regex = /.*/;
