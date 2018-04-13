@@ -31,16 +31,15 @@ h3 {
 }
 
 h1 {
-  font-size: 1.8333em;
+  font-size: 28px;
   line-height: 1.83333em; /* NOTE: 33px */
-  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
   /*border: 0.111em  solid white; /* NOTE: diagnostics */
 }
 
 h2 {
   font-size: 1.8333em;
   padding-bottom: 0.3333em;
-  line-height: 1em;
+  line-height: 1.8333em;
 }
 
 body {
@@ -76,12 +75,17 @@ footer {
   2. concerned with layout and spatial
      relationships
 */
+
 .menu-item-pic img {
   position: absolute;
   right: 0.027777em; /* NOTE: 5 */
   top: 3.666667em;
   height: 45%;
 }
+#header {
+  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
+}
+
 /* NOTE: Body header */
 #header img {
   display: block;
@@ -531,7 +535,7 @@ html:not(.pizza-page) .button {
 .js .border-menu:before {
   content: "";
   position: absolute;
-  top: 0.25em;
+  top: 40px;
   right: 1.2222em; /* NOTE: 2.111em  */
   width: 2.4444em;
   height: 0.33333em; /* NOTE: .3333em */
