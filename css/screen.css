@@ -17,8 +17,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  font-size: 18px; /* 18 / 16 = 1.125 */
-  line-height: 22px; /* 22 / 18 = 1.222*/
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em; /* 22 / 18 = 1.222*/
   /*font-family: Century Gothic, sans-serif;*/
   background-color: #D7DCDD;
   color: #093755;
@@ -31,35 +31,32 @@ h3 {
 }
 
 h1 {
-  font-size: 33px; /* 42.635 / 18 = 2.369 */
-  line-height: 33px; /* 44 / 42.635 = 1.032*/
+  font-size: 1.8333em;
+  line-height: 33px;
   background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
   /*border: 2px solid white; /* NOTE: diagnostics */
 }
 h2 {
-font-size: 33px;
-padding-bottom:11px;
-line-height: 33px;
+font-size: 1.8333em;
+padding-bottom:0.3333em;
+line-height: 1em;
 }
 
 body {
-  padding-bottom: 100px;
+  padding-bottom: 5.555em;
 }
 main {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
 
-ul {
-
-}
-
 ul a {
 display: block;
 text-decoration: none;
-padding-top: 15px;
-padding-bottom: 15px;
+padding-top: 0.45em;
+padding-bottom: 0.45em;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -68,7 +65,7 @@ a {
 footer {
   position: absolute;
   width: 100%;
-  height: 20px;
+  height: 1.111em;
   bottom: 0;
 }
 
@@ -82,44 +79,51 @@ footer {
 /* NOTE: Body header */
 #header img {
   display: block;
-  max-height: 88px;
+  max-height: 4.888em;
   float: left;
 }
+
 #header h1 {
-  padding-top: 22px;
+  padding-top: 0.66em;
 }
+
 #about-us h2,
 article header {
 margin-top: 44px;
 }
+
+
 #ready {
   text-align: center;
 }
+
 #order-options li,
 #food-choices-navigation li {
   width: 100%;
-  font-size: 33px;
+  font-size: 1.83em;
   text-align: center;
   box-sizing: border-box;
-  margin-top: 11px;
+  margin-top: 0.333em;
   background-color: rgba(109,181,195,1);
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-right-radius: 0.75em;
+  border-bottom-left-radius: 0.75em;
+  border-top-left-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
 }
 
 #food-choices-navigation a {
-  padding: 22px;
+  padding: 0.666em;
 }
 
 #slideshow,
 #order-options {
-  margin-top: 66px;
+  margin-top: 3.666em;
 }
+
 #slideshow h2 {
   text-align: center;
 }
+
 #slideshow figure {
 position: absolute;
 /* NOTE: centers figure element horizontally */
@@ -129,19 +133,21 @@ right: 0;
 margin-left: 1.222em; /* 22 / 18 = 1.2222222 */
 margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 }
+
 #slideshow figcaption {
   text-align: center;
 }
+
 #slideshow img {
   display: block;
   max-width: 100%;
-  max-height: 250px;
+  max-height: 13.888em;
   /* NOTE: centers picture inside figure element */
   margin: 0 auto;
 
 }
 #food-choices-page body {
-    padding-bottom: 350px;
+    padding-bottom: 19.444em;
 }
 
 #food-choices-navigation li {
@@ -151,52 +157,6 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 #food-choices-navigation li:nth-child(even) {
   margin-left: 5%;
 }
-
-#pizza-creation {
-  margin-top: 2.6em;
-}
-
-#pizza-form {
-  margin-top: 0.5em;
-  display: block;
-}
-
-#current-coupons {
-  font-weight: bold;
-}
-
-#coupon {
-  margin-top: 0.5em;
-}
-
-#checkout {
-  margin-top: 1em;
-}
-
-#payment-form {
-  margin-top: 0.5em;
-}
-
-#custom-toppings,
-#custom-size,
-#custom-type,
-#custom-sauce {
-  padding-top: 1.222em;
-  font-weight: normal;
-  width: 50%;
-  column-count: 2
-}
-.custom-label {
-  font-weight: bold
-}
-.menu-item-header {
-  font-weight: bold;
-}
-
-.menu-item-description {
-
-}
-
 .no-js #nav {
   margin-top: 50px;
 }
@@ -204,11 +164,11 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   width: 45%;
   margin-top: 11px;
   background-color: rgba(109,181,195,1);
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  font-size: 22px;
+  border-top-right-radius: 0.75em;
+  border-bottom-left-radius: 0.75em;
+  border-top-left-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
+  font-size: 1.222em;
 }
 .no-js #nav li:nth-child(even) {
   float: right;
@@ -233,7 +193,7 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-bottom: 300px;
 }
 #food-choices h2,
-#pizzas h2 {
+#pizzas-page h2 {
   font-size: 33px;
   line-height: 33px;
   padding-bottom: 11px;
@@ -269,7 +229,6 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
   margin-top: 22px;
   border: 2px solid black;
   padding: 11px 11px;
-  background-image: linear-gradient(to bottom, #6eb1c4, #8abacb, #a4c3d1, #bccdd6, #d2d7da);
 }
  #menu {
   float: none;
@@ -327,6 +286,15 @@ margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 #toppings-content.selected {
   display: block;
 }
+
+#gohome {
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.2em;
+  list-style-type: none;
+  color: blue;
+}
+
 .pizza-main-option h4 {
   height: 44px;
   background-color: gray;
@@ -398,6 +366,10 @@ background-color: #D7DCDD;
 #veggie-toppings h4 a {
   right: 10px;
 }
+.custom-end-btn {
+  position: relative;
+  bottom: -85px;
+}
 #toppings-content h4 a.selected {
   background-color: gray;
 }
@@ -455,8 +427,72 @@ line-height: 33px;
 .topping-amount li:nth-of-type(n+2).selected {
   background-color: rgba(109,181,195,1);
 }
-#pizza-customization-page footer {
+.menu-item {
   position: relative;
+  height: 330px;
+}
+#pasta-page .menu-item {
+  height: 398px;
+}
+.pizza-button ul li,
+.custom-pizza,
+html:not(.pizza-page) .button,
+.custom-end-btn a {
+  width: 40%;
+  display: inline-block;
+  margin: 11px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(109,181,195,1);
+  position: absolute;
+  bottom: 11px;
+}
+.pizza-button ul li:nth-of-type(n+2),
+.custom-pizza {
+  right: 5%;
+  background-color: rgba(103,104,106,0.6); /* NOTE:  */
+  color: white;
+}
+.custom-pizza,
+html:not(.pizza-page) .button,
+.custom-end-btn a {
+  right: 30%
+}
+.menu-item-header {
+  font-size: 22px;
+  font-weight: bold;
+}
+.menu-item-pic img{
+  position: absolute;
+  right: 5px;
+  top: 66px;
+  height: 45%;
+}
+.menu-item-description {
+  width: 55%;
+  margin-top: 11px;
+}
+.cost {
+  font-weight: bold;
+  display: block;
+  margin-top: 11px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 5.5px;
+  width: 40%;
+}
+#ready {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: center;
 }
 /* State Styles */
 /*
@@ -526,26 +562,34 @@ line-height: 33px;
     padding: 0 15%;
   }
   #pizza-customization-page article {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-}
-@media screen and (min-width: 500px) {
-  #pizza-customization-page article {
     margin-left: 10%;
     margin-right: 10%;
   }
 
 }
-
-@media screen and (min-width: 725px) {
+@media screen and (min-width: 600px) {
+  #menu {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
 }
+@media screen and (min-width: 750px) {
+  .menu-item {
+    width: 43%;
+    height: 354px;
+    float: left;
+  }
+  .menu-item:nth-of-type(2n){
+    margin-left: 2%;
+  }
+  .menu-item-pic img{
+    width: 40%;
+  }
+  body {
+    padding-bottom: 1250px;
+  }
 
-@media screen and (min-width: 850px) {
-
-}
 
 /* @media screen and (min-width: 500px) {
   #nav {
