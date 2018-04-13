@@ -27,7 +27,7 @@ html {
 h1,
 h2,
 h3 {
-  font-family: Copperplate Copperplate Gothic Light, sans-serif;
+  font-family: "Copperplate Copperplate Gothic Light", sans-serif;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
   font-size: 1.8333em;
-  padding-bottom:0.3333em;
+  padding-bottom: 0.3333em;
   line-height: 1em;
 }
 
@@ -51,18 +51,17 @@ main {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222 */
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
 ul a {
   display: block;
   text-decoration: none;
   padding-top: 0.45em;
   padding-bottom: 0.45em;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
 }
 
 footer {
@@ -94,11 +93,15 @@ footer {
 article header {
   margin-top: 44px;
 }
-
 #ready {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
   text-align: center;
 }
-
+.toppings-section ul > li:last-of-type {
+  border-bottom: none;
+}
 #order-options li,
 #food-choices-navigation li {
   width: 100%;
@@ -174,6 +177,7 @@ article header {
   border-top-left-radius: 0.75em;
   border-bottom-right-radius: 0.75em;
   font-size: 1.222em;
+  background-color: rgba(109,181,195,1);
 }
 
 .no-js #nav li:nth-child(even) {
@@ -183,7 +187,7 @@ article header {
   margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 }
 
-.no-js #nav li:last-child{
+.no-js #nav li:last-child {
   margin: 0 auto;
   margin-top: 11px;
 }
@@ -192,10 +196,6 @@ article header {
   padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
   text-align: center;
-}
-
-.no-js #nav li {
-  background-color: rgba(109,181,195,1);
 }
 
 #intro-page body {
@@ -405,9 +405,6 @@ background-color: #D7DCDD;
 .toppings-section ul > li:first-of-type {
   border-top: 1px solid black;
 }
-.toppings-section ul > li:last-of-type {
-  border-bottom: none;
-}
 .toppings-section h5 a.selected {
 background-color: rgba(109,181,195,1);
 padding: 11px;
@@ -478,13 +475,13 @@ html:not(.pizza-page) .button,
 .custom-pizza,
 html:not(.pizza-page) .button,
 .custom-end-btn a {
-  right: 30%
+  right: 30%;
 }
 .menu-item-header {
   font-size: 22px;
   font-weight: bold;
 }
-.menu-item-pic img{
+.menu-item-pic img {
   position: absolute;
   right: 5px;
   top: 66px;
@@ -503,12 +500,7 @@ html:not(.pizza-page) .button,
   padding: 5.5px;
   width: 40%;
 }
-#ready {
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: bold;
-  text-align: center;
-}
+
 /* State Styles */
 /*
   States of the browser and user access
@@ -595,10 +587,10 @@ html:not(.pizza-page) .button,
     height: 354px;
     float: left;
   }
-  .menu-item:nth-of-type(2n){
+  .menu-item:nth-of-type(2n) {
     margin-left: 2%;
   }
-  .menu-item-pic img{
+  .menu-item-pic img {
     width: 40%;
   }
   body {
