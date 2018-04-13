@@ -452,7 +452,7 @@ html:not(.pizza-page) .button {
 }
 .custom-end-btn {
   position: relative;
-  bottom: -8.027777em;
+  bottom: -4.027777em;
 }
 #toppings-content h4 a.selected {
   background-color: gray;
