@@ -182,7 +182,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         console.log(pizza_options);
       }
       //  if(($('.topping-amount li:nth-of-type(n+2).selected').closest('html h5')))
-      // window.location.href = '/food'-choices/index.html';
+      window.location.href = '/food'-choices/index.html;
     }
     function setItem(item) {
       var _item = item.type + ',' + item.name + ',' + item.cost;
