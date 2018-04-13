@@ -99,6 +99,20 @@ article header {
   font-weight: bold;
   text-align: center;
 }
+.topping-amount li:nth-of-type(n+2) {
+  width: 25%;
+  display: inline-block;
+  margin: 11px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  text-align: center;
+}
 .toppings-section ul > li:last-of-type {
   border-bottom: none;
 }
@@ -298,6 +312,12 @@ html:not(.pizza-page) .button,
   padding: 11px;
   text-align: center;
 }
+.toppings-section h5 a.selected {
+  background-color: rgba(109,181,195,1);
+  padding: 11px;
+  font-size: 24px;
+  line-height: 33px;
+}
 #pizza-customization-page h3 a.selected {
   height: 66px;
   border-width: 6px;
@@ -442,12 +462,6 @@ html:not(.pizza-page) .button,
 .toppings-section ul > li:first-of-type {
   border-top: 1px solid black;
 }
-.toppings-section h5 a.selected {
-background-color: rgba(109,181,195,1);
-padding: 11px;
-font-size: 24px;
-line-height: 33px;
-}
 .toppings-section h6 {
   background-color: gray;
   font: 22px;
@@ -459,20 +473,7 @@ line-height: 33px;
 .topping-amount.selected {
   display: block;
 }
-.topping-amount li:nth-of-type(n+2) {
-  width: 25%;
-  display: inline-block;
-  margin: 11px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border-color: black;
-  border-width: 2px;
-  border-style: solid;
-  box-sizing: border-box;
-  text-align: center;
-}
+
 .topping-amount li:nth-of-type(n+2).selected {
   background-color: rgba(109,181,195,1);
 }
