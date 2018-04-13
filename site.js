@@ -66,13 +66,18 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         $(this).siblings().removeClass('selected');
         $(this).toggleClass('selected');
     } else if ($(this).is($('.pizza-main-options li'))) { //pizza main option
-      console.log('here');
       $(this).siblings().removeClass('selected');
       $(this).toggleClass('selected');
     } else if ($(this).is($('.pizza-secondary-options li'))) { //pizza secondary options
-      console.log('here');
       $(this).siblings().removeClass('selected');
       $(this).toggleClass('selected');
+    } else if ($(this).children('a').attr('href') === '#to-toppings') { // Topping button on chesse, suace page
+      console.log('TO TOPPINGS');
+        $('#pizza-customization-page h3 a').removeClass('selected');
+        $('.options-content').removeClass('selected');
+        $('#toppings-section h3 a').addClass('selected');
+        $('#toppings-content').addClass('selected');
+        $('html,body').scrollTop(0);
     }
     //  $(this).addClass('selected');
   });
