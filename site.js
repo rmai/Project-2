@@ -193,11 +193,12 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     console.log(_item);
   }
   function getItem(count) {
-    for(var i = 0; i < count; i++) {
+    for(var i = 0; i <= count; i++) {
+      console.log(count);
       var _count = count;
-      console.log(docCookies.getItem(_count.toString()));
       _count++;
     }
+    console.log(docCookies.getItem(_count.toString()));
   }
   function removeItem(count) {
     for(var i = 0; i < count; i++) {
