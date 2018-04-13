@@ -31,7 +31,7 @@ h3 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 1.8333em;
   line-height: 1.83333em; /* NOTE: 33px */
   /*border: 0.111em  solid white; /* NOTE: diagnostics */
 }
@@ -535,7 +535,7 @@ html:not(.pizza-page) .button {
 .js .border-menu:before {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 2.22em;
   right: 1.2222em; /* NOTE: 2.111em  */
   width: 2.4444em;
   height: 0.33333em; /* NOTE: .3333em */
