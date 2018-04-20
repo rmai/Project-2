@@ -8,6 +8,11 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   var pizza_options= [];
   $('html').addClass('js').removeClass('no-js');
   $('#nav').before('<a id="js-nav" class="border-menu" href="#nav"></a>');
+  console.log((docCookies.getItem('count')));
+  if(docCookies.keys().length === 1) {
+    console.log('HERE');
+      docCookies.setItem('count', '0',600, '/');
+  }
   $('#js-nav').on('click', function(e) {
     e.preventDefault();
     $('#nav ul').toggleClass('nav-is-visible');
@@ -91,9 +96,13 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     var cost= $(this).attr('value');
     var name= $(this).attr('name');
     var count = docCookies.keys().length-1;
+    var cost= parseFloat($(this).parent().siblings('.menu-item-cost').text().substring(1));
+    var name= $(this).parent().siblings('.menu-item-header').text();
     var item_count;
     var item;
-    console.log(this);
+    // console.log(this);
+    // console.log(name);
+    // console.log(cost);
     e.preventDefault();
     if(pageID === 'drinks-page') {
       console.log('DRINKS');
@@ -103,6 +112,8 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
         name: name
       };
       items.push(item);
+      setItem(item);
+      getItems();
     } else if (pageID === 'desserts-page') {
       console.log('DESSERTS');
       item= {
@@ -142,9 +153,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       //     cost: cost,
       //     name: name
       //   };
-      items.push(item);
-      setItem(item);
-      getItem(count);
+      //items.push(item);
     }else if ($(this).text() === "Customize") {
       console.log("CUSTOMIZE");
       window.location.href = 'https://sealteam362.github.io/Project-2/order-now/';
@@ -189,25 +198,58 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     //  if(($('.topping-amount li:nth-of-type(n+2).selected').closest('html h5'))
     function setItem(item) {
       var _item = item.type + ',' + item.name + ',' + item.cost;
-      console.log(count);
-      item_count = item_count + 1;
-      count++;
-      console.log(count.toString());
-      docCookies.setItem(count.toString(), _item);
-      console.log(_item);
-    }
-    function getItem(count) {
-      var _count;
-      var i;
-      for(i = 0; i <= count; i++) {
-        console.log(count);
-        _count = count;
-        _count++;
+      var count = parseFloat(docCookies.getItem('count'));
+      if (count === 0) {
+        count = 1;
       }
-      console.log(docCookies.getItem(_count.toString()));
+      console.log(_item);
+      console.log(count.toString());
+      docCookies.setItem(count, _item,250,'/');
+      count++;
+      docCookies.setItem('count', count,600,'/');
+      console.log(count);
+    }
+    function removeItems() {
+      var count = parseFloat(docCookies.getItem('count'));
+      for(i = 0; i <= count -1; i++) {
+        docCookies.removeItem(i);
+      }
+    //  console.log(docCookies.getItem(i.toString()));
     }
   });
+  // function getItems() {
+  //   var count = parseFloat(docCookies.getItem('count'));
+  //   for(i = 1; i <= count -1 ; i++) {
+  //     $('#checkout-items ul').append('<li></li>');
+  //    console.log(docCookies.getItem(i).split(',')[0] + i);
+  //    console.log(docCookies.getItem(i).split(',')[1] + i);
+  //    console.log(docCookies.getItem(i).split(',')[2] + i);
+  //   }
+  // }
+  if ($('html').attr('id') === 'checkout-page') {
+    var count = parseFloat(docCookies.getItem('count'));
+    var htmlString = '';
+    var temp =''
+    console.log('checkout');
+    for(i = 1; i <= count -1 ; i++) {
+      temp += '<li class="checkout-item">';
+      temp += '<ul>';
+      temp += '<li class="checkout-item-type">' + docCookies.getItem(i).split(',')[0];
+      temp += '</li>';
+      temp += '<li class="checkout-item-name">' + docCookies.getItem(i).split(',')[1];
+      temp += '</li>';
+      temp += '<li class="checkout-item-cost">' + '$'+docCookies.getItem(i).split(',')[2];
+      temp += '</li>';
+      temp += '</ul>';
+      temp += '</li>';
+     console.log(docCookies.getItem(i).split(',')[0]);
+     console.log(docCookies.getItem(i).split(',')[1]);
+     console.log(docCookies.getItem(i).split(',')[2]);
+     htmlString = temp;
+    }
+    $('#checkout-items ul').append(htmlString);
 
+  }
   function validPayment(form_array) {
     // make sure the following fields are not empty
     var isValid = true;
@@ -231,6 +273,5 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   validPayment(items);
 
 })(jQuery);
-
 // console.log($(this).text());
 // console.log($(this).attr('href'));
