@@ -659,7 +659,9 @@ bottom: 0;
     margin-left: 10%;
     margin-right: 10%;
   }
-
+  #aside {
+    left: 25%;
+  }
 }
 @media screen and (min-width: 600px) {
   #menu {
@@ -667,6 +669,11 @@ bottom: 0;
     margin-right: 5%;
   }
 
+}
+@media screen and (min-width: 700px) {
+  #aside {
+    left: 30%;
+  }
 }
 @media screen and (min-width: 750px) {
   .menu-item {
@@ -682,6 +689,9 @@ bottom: 0;
   }
   body {
     padding-bottom: 78.125em;
+  }
+  #aside {
+    left: 35%;
   }
 }
 /* @media screen and (min-width: 500px) {
