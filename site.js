@@ -11,7 +11,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   console.log((docCookies.getItem('count')));
   if(docCookies.keys().length === 1) {
     console.log('HERE');
-      docCookies.setItem('count', '0',600, '/');
+      docCookies.setItem('count', '0',new Date(2027, 2, 3), '/');
   }
   $('#js-nav').on('click', function(e) {
     e.preventDefault();
@@ -196,7 +196,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     }else if ($(this).attr('id') === 'payment-btn') {
       console.log('pay me now');
       //docCookies.removeItem('count');
-      docCookies.setItem('count', '0',600,'/');
+      docCookies.setItem('count', '0',new Date(2027, 2, 3),'/');
     }else if ($(this).attr('id') === 'cart-btn') {
       console.log('cart');
       window.location.href = $(this).attr('href');
