@@ -93,9 +93,6 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
 
   $('.button').on('click', function(e) {
     var pageID= $(this).closest('html').attr('id');
-    var cost= $(this).attr('value');
-    var name= $(this).attr('name');
-    var count = docCookies.keys().length-1;
     var cost= parseFloat($(this).parent().siblings('.menu-item-cost').text().substring(1));
     var name= $(this).parent().siblings('.menu-item-header').text();
     var item_count;
@@ -104,8 +101,13 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     // console.log(name);
     // console.log(cost);
     e.preventDefault();
-    if(pageID === 'drinks-page') {
+    if(pageID === 'drinks-page' && ($(this).attr('id') === 'order-btn')) {
       console.log('DRINKS');
+      $('#aside').addClass('display');
+      setTimeout(
+      function() {
+       $('#aside').removeClass('display');
+     }, 4500);
       item= {
         type: 'Drinks',
         cost: cost,
