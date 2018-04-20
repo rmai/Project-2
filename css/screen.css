@@ -505,6 +505,49 @@ html:not(.pizza-page) .button {
   box-sizing: border-box;
   padding: 0.30555em;
   width: 40%;
+  width: 15%;
+}
+#checkout-items {
+  margin-top: 1.2222em; /* NOTE: 2.111em  */
+  border: 0.111em  solid black;
+  box-sizing: border-box;
+  padding: 1.2222em;
+  min-height: 88px;
+}
+.checkout-item {
+  border-bottom: 4px  solid rgba(109,181,195,1);
+  padding: 0.1111em 0.6111em; /* NOTE: 11px */
+  padding: 22px;
+  margin-bottom: 22px;
+  position: relative;
+  height: 44px;
+}
+.checkout-item ul >li {
+  display: inline-block;
+  width: 33%;
+}
+.checkout-item ul >li:last-of-type {
+  width: 15%;
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+}
+.checkout-item-name {
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  left: 33px;
+  bottom: 11px;
+}
+.checkout-item-type {
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 11px;
+}
+.checkout-item-cost {
+  width: 10%;
+  text-align: left;
 }
 /* State Styles */
 /*
