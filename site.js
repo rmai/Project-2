@@ -235,7 +235,8 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       removeItems();
     }else if ($(this).attr('id') === 'cart-btn') {
       console.log('cart');
-      window.location.href = '/checkout';
+    //  window.location.href = '/checkout';
+    window.location.href = '/Project-2/checkout';
     } else {
       //window.location.href = 'https://sealteam362.github.io/Project-2/food-choices/';
     }
