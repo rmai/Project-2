@@ -120,9 +120,7 @@ article header {
   border-bottom: 0.055555em solid black;
   box-sizing: border-box;
 }
-.pizza-button ul li,
-.custom-pizza,
-html:not(.pizza-page) .button {
+.button {
   width: 40%;
   display: inline-block;
   margin: 0.6111em; /* NOTE: 11px */
@@ -138,6 +136,7 @@ html:not(.pizza-page) .button {
   background-color: rgba(109,181,195,1);
   position: absolute;
   bottom: 0.6111em; /* NOTE: 11px */
+  left: 30%;
 }
 .pizza-secondary-options li:nth-of-type(n+2) {
   display: inline-block;
@@ -184,12 +183,12 @@ html:not(.pizza-page) .button {
 .toppings-section ul > li:last-of-type {
   border-bottom: none;
 }
-.pizza-button ul li:nth-of-type(n+2),
+/* .pizza-button ul li:nth-of-type(n+2),
 .custom-pizza {
   right: 5%;
   background-color: rgba(103,104,106,0.6); /* NOTE: */
   color: white;
-}
+} */
 .toppings-section ul > li:first-of-type {
   border-top: 0.05555 solid black;
 }
@@ -448,9 +447,9 @@ html:not(.pizza-page) .button {
   font-size: 1.2222em; /* NOTE: 2.111em  */
 }
 .custom-pizza,
-html:not(.pizza-page) .button {
+/* html:not(.pizza-page) .button {
   right: 30%;
-}
+} */
 .custom-end-btn {
   position: relative;
   bottom: -4.027777em;
@@ -554,6 +553,7 @@ html:not(.pizza-page) .button {
   width: 300px;
   height: 176px;
   z-index: 1;
+  display: none;
   opacity: 0;
 }
 #aside h2 {
@@ -573,11 +573,11 @@ html:not(.pizza-page) .button {
   left: 11px;
 }
 #aside .button {
-background-color: gray;
-padding: 11px;
-bottom: 0;
+  background-color: gray;
+  padding: 11px;
 }
 #aside.display {
+  display: block;
   animation: fadeinout 4s linear forwards;
 }
 @keyframes fadeinout {
