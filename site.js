@@ -11,7 +11,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   console.log((docCookies.getItem('count')));
   if(docCookies.keys().length === 1) {
     console.log('HERE');
-      docCookies.setItem('count', '0',new Date(2027, 2, 3), '/');
+      docCookies.setItem('count', '0',null, '/');
   }
   $('#js-nav').on('click', function(e) {
     e.preventDefault();
@@ -101,12 +101,12 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     // console.log(name);
     // console.log(cost);
     e.preventDefault();
-    if(pageID === 'drinks-page' && ($(this).attr('id') === 'order-btn')) {
+    if(pageID === 'drinks-page' && ($(this).hasClass('order-btn'))) {
       console.log('DRINKS');
       $('#aside').addClass('display');
       setTimeout(
-      function() {
-       $('#aside').removeClass('display');
+        function() {
+          $('#aside').removeClass('display');
      }, 4500);
       item= {
         type: 'Drinks',
@@ -116,46 +116,81 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       items.push(item);
       setItem(item);
       getItems();
-    } else if (pageID === 'desserts-page') {
+    } else if (pageID === 'desserts-page' && ($(this).hasClass('order-btn'))) {
       console.log('DESSERTS');
+      $('#aside').addClass('display');
+      setTimeout(
+        function() {
+         $('#aside').removeClass('display');
+      }, 4500);
       item= {
         type: 'Desserts',
         cost: cost,
         name: name
       };
       items.push(item);
-    }else if (pageID === 'pasta-page') {
+      setItem(item);
+      getItems();
+    }else if (pageID === 'pasta-page' && ($(this).hasClass('order-btn'))) {
       console.log('PASTA');
+      $('#aside').addClass('display');
+      setTimeout(
+        function() {
+         $('#aside').removeClass('display');
+      }, 4500);
       item= {
         type: 'Pasta',
         cost: cost,
         name: name
       };
       items.push(item);
-    }else if ($(this).closest('html').hasClass('sides-page')) {
+      setItem(item);
+      getItems();
+    }else if ($(this).closest('html').hasClass('sides-page') && ($(this).hasClass('order-btn'))) {
       console.log('SIDES');
+      $('#aside').addClass('display');
+      setTimeout(
+        function() {
+         $('#aside').removeClass('display');
+      }, 4500);
       item= {
         type: 'Sides',
         cost: cost,
         name: name
       };
       items.push(item);
-    }else if ($(this).closest('html').hasClass('wings-page')) {
+      setItem(item);
+      getItems();
+    }else if ($(this).closest('html').hasClass('wings-page') && ($(this).hasClass('order-btn'))) {
       console.log('WINGS');
+      $('#aside').addClass('display');
+      setTimeout(
+        function() {
+         $('#aside').removeClass('display');
+      }, 4500);
       item= {
         type: 'Wings',
         cost: cost,
         name: name
       };
       items.push(item);
-      // }else if ($(this).closest('html').hasClass('pizza-page')) {
-      //   console.log('PIZZA');
-      //   item= {
-      //     type: 'Pizza',
-      //     cost: cost,
-      //     name: name
-      //   };
-      //items.push(item);
+      setItem(item);
+      getItems();
+       }else if ($(this).closest('html').hasClass('pizza-page') && ($(this).hasClass('order-btn'))) {
+         console.log('PIZZA');
+         $('#aside').addClass('display');
+         setTimeout(
+           function() {
+            $('#aside').removeClass('display');
+         }, 4500);
+         item= {
+           type: 'Pizza',
+           cost: cost,
+           name: name
+         };
+         items.push(item);
+         setItem(item);
+         getItems();
     }else if ($(this).text() === "Customize") {
       console.log("CUSTOMIZE");
       //window.location.href = 'https://sealteam362.github.io/Project-2/order-now/';
@@ -196,10 +231,11 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     }else if ($(this).attr('id') === 'payment-btn') {
       console.log('pay me now');
       //docCookies.removeItem('count');
-      docCookies.setItem('count', '0',new Date(2027, 2, 3),'/');
+      docCookies.setItem('count', '0',null,'/');
+      removeItems();
     }else if ($(this).attr('id') === 'cart-btn') {
       console.log('cart');
-      window.location.href = $(this).attr('href');
+      window.location.href = '/checkout';
     } else {
       //window.location.href = 'https://sealteam362.github.io/Project-2/food-choices/';
     }
@@ -212,17 +248,18 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       }
       console.log(_item);
       console.log(count.toString());
-      docCookies.setItem(count, _item,250,'/');
+      docCookies.setItem(count, _item,null,'/');
       count++;
-      docCookies.setItem('count', count,600,'/');
+      docCookies.setItem('count', count,null,'/');
       console.log(count);
     }
     function removeItems() {
+      console.log('function');
       var count = parseFloat(docCookies.getItem('count'));
       for(i = 0; i <= count -1; i++) {
         docCookies.removeItem(i);
+        console.log(i+'');
       }
-    //  console.log(docCookies.getItem(i.toString()));
     }
   });
   // function getItems() {
