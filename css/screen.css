@@ -521,8 +521,7 @@ article header {
   height: 44px;
 }
 .checkout-item ul >li {
-  display: inline-block;
-  width: 33%;
+  display: block;
 }
 .checkout-item ul >li:last-of-type {
   width: 15%;
@@ -531,10 +530,10 @@ article header {
   bottom: 22px;
 }
 .checkout-item-name {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   position: absolute;
-  left: 33px;
+  left: 11px;
   bottom: 11px;
 }
 .checkout-item-type {
@@ -544,7 +543,7 @@ article header {
   left: 11px;
 }
 .checkout-item-cost {
-  width: 10%;
+  width: 15%;
   text-align: left;
 }
 #aside {
@@ -664,6 +663,9 @@ article header {
   }
   #aside {
     left: 25%;
+  }
+  .checkout-item-name {
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 600px) {
