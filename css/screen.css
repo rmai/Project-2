@@ -23,6 +23,7 @@ html {
   background-color: #D7DCDD;
   color: #093755;
   box-sizing: border-box;
+  position: relative;
 }
 h1,
 h2,
@@ -62,7 +63,8 @@ ul a {
   padding-bottom: 0.45em;
 }
 footer {
-
+  position: absolute;
+  bottom: 0;
 }
 
 /* Layout Styles */
@@ -580,6 +582,10 @@ article header {
   display: block;
   animation: fadeinout 4s linear forwards;
 }
+#payment-btn {
+  padding: 11px;
+  bottom: 33px;
+}
 @keyframes fadeinout {
   25% { opacity: 1; }
   75% { opacity: 1; }
@@ -685,7 +691,7 @@ article header {
     width: 40%;
   }
   body {
-    padding-bottom: 78.125em;
+    padding-bottom: 800px;
   }
   #aside {
     left: 35%;
