@@ -284,7 +284,8 @@ article header {
   width: 20%;
 }
 #wings-navigation li {
-  width: 33%;
+  width: 25%;
+  padding: 0 11px;
 }
 #sides-navigation li {
   width: 50%;
