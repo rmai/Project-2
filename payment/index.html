@@ -6,7 +6,7 @@
   <meta name="viewport"
   content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" href="../css/screen.css" />
-  <link rel="stylesheet" href="//basehold.it/22" />
+  <link rel="stylesheet" href="#//basehold.it/22" />
 </head>
 <body>
   <header id="header">
@@ -22,42 +22,44 @@
     </nav>
   </header>
   <main>
-    <h2 id="checkout">Checkout</h2>
-    <form action="#null" method="post" id="payment-form">
-      <ul>
-        <li>
-          <label for="payment-name">Name</label>
-          <input type="text" placeholder="Card Owner" name="Name" id="payment-name" />
-        </li>
-        <li>
-          <label for="payment-email">Email</label>
-          <input type="text" placeholder="Email" name="E-mail Address" id="payment-email" />
-        </li>
-        <li>
-          <label for="payment-zip">ZIP</label>
-          <input type="text" placeholder="ZIP Code" name="Zip Code" id="payment-zip" />
-        </li>
-        <li>
-          <label for="payment-cc">Card Number</label>
-          <input type="text" placeholder="XXXXXXXXXXXXXXXX" name="Credit Card Number" id="payment-cc" />
-        </li>
-        <li>
-          <label for="payment-date">Expiration Date</label>
-          <input type="text" placeholder="XX/XX" name="Expiration Date" id="payment-date" />
-        </li>
-        <li>
-          <label for="payment-cvv">CVV / Security Code</label>
-          <input type="text" placeholder="000" name="CVV" id="payment-cvv" />
-        </li>
-        <li>
-          <label for="coupon-code-entry">Coupon Code</label>
-          <input type="text" placeholder="enter code here" name="coupon-code-entry" id="coupon-code-entry" />
-        </li>
-        <li>
-          <input type="submit" value="Checkout" id ="payment-checkout" />
-        </li>
-      </ul>
-    </form>
+    <article class="payment">
+      <h2 id="payment">Payment</h2>
+      <form action="#null" method="post" id="payment-form">
+        <ul>
+          <li>
+            <label for="payment-name">Name</label>
+            <input type="text" placeholder="Card Owner" name="Name" id="payment-name" />
+          </li>
+          <li>
+            <label for="payment-email">Email</label>
+            <input type="text" placeholder="Email" name="E-mail Address" id="payment-email" />
+          </li>
+          <li>
+            <label for="payment-zip">ZIP</label>
+            <input type="text" placeholder="ZIP Code" name="Zip Code" id="payment-zip" />
+          </li>
+          <li>
+            <label for="payment-cc">Card Number</label>
+            <input type="text" placeholder="XXXXXXXXXXXXXXXX" name="Credit Card Number" id="payment-cc" />
+          </li>
+          <li>
+            <label for="payment-date">Expiration Date</label>
+            <input type="text" placeholder="XX/XX" name="Expiration Date" id="payment-date" />
+          </li>
+          <li>
+            <label for="payment-cvv">CVV / Security Code</label>
+            <input type="text" placeholder="000" name="CVV" id="payment-cvv" />
+          </li>
+          <li>
+            <label for="coupon-code-entry">Coupon Code</label>
+            <input type="text" placeholder="enter code here" name="coupon-code-entry" id="coupon-code-entry" />
+          </li>
+          <li>
+            <input type="submit" value="Submit Payment" id ="payment-checkout" />
+          </li>
+        </ul>
+      </form>
+    </article>
   </main>
   <footer>
     <p>&copy; Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
