@@ -879,6 +879,10 @@ p.checkout-item-total {
     margin-left: 10%;
     margin-right: 10%;
   }
+  article.payment {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   #aside {
     left: 25%;
   }
@@ -891,7 +895,10 @@ p.checkout-item-total {
     margin-left: 5%;
     margin-right: 5%;
   }
-
+  article.payment {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 @media screen and (min-width: 700px) {
   #aside {
@@ -899,6 +906,10 @@ p.checkout-item-total {
   }
 }
 @media screen and (min-width: 750px) {
+  article.payment {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
   .menu-item {
     width: 43%;
     height: 22.125em;
@@ -909,9 +920,6 @@ p.checkout-item-total {
   }
   .menu-item-pic img {
     width: 40%;
-  }
-  body {
-    padding-bottom: 800px;
   }
   #aside {
     left: 35%;
