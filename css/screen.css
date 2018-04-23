@@ -925,6 +925,30 @@ p.checkout-item-total {
     left: 35%;
   }
 }
+@media screen and (min-width: 900px) {
+  .js .border-menu {
+    display: none;
+  }
+  .js #nav ul {
+    display: block;
+    margin-top: -11px;
+  }
+  .js #nav li {
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    font-size: 22px;
+    font-weight: bold;
+    border-top: none;
+    border-bottom: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin-left: 5%;
+  }
+  .js #header {
+    height: 82px;
+  }
+}
 /* @media screen and (min-width: 500px) {
   #nav {
     position: absolute;
