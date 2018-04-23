@@ -235,6 +235,51 @@ footer {
   position: absolute;
   bottom: 0;
 }
+form {
+  padding: 0.888rem 0; /* NOTE: 16 / 18 = .888 */
+  padding-left: 10%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  border: 0.111rem solid black; /* NOTE: 2 / 18 = .111 */
+  /* box-shadow: 10px  10px 50px white; */
+}
+input,
+label {
+  display: block;
+  margin-bottom: 0.611rem; /* NOTE: 11 / 18 = 0.611 */
+}
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0.111rem solid rgba(109,181,195,1); /* NOTE: 2 / 18 = .111 */
+  border-top: none;
+  border-right: none;
+  cursor: pointer;
+  border-radius: 0.277em;
+  line-height: 1;
+  padding: 0.611rem; /* NOTE: 11 / 18 = .611 */
+  background: none;
+  color: black;
+}
+input::placeholder {
+  opacity: 1;
+  color: grey;
+}
+input:focus {
+  color: black;
+}
+input[type="date"] {
+  color: #DB4E58;
+}
+input[type="submit"] {
+  font-size: 0.888rem; /* NOTE: .888 */
+  background: #7A7A7A;
+  color: white;
+  border: none;
+  width: 50%;
+  font-weight: bold;
+  float: right;
+}
 
 /* Layout Styles */
 /*
