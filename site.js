@@ -230,9 +230,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       console.log(pizza_options);
     }else if ($(this).attr('id') === 'payment-btn') {
       console.log('pay me now');
-      //docCookies.removeItem('count');
-      docCookies.setItem('count', '0',null,'/');
-      removeItems();
+      window.location.href = $(this).attr('href');
     }else if ($(this).attr('id') === 'cart-btn') {
       console.log('cart');
     //  window.location.href = '/checkout';
@@ -275,7 +273,8 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   if ($('html').attr('id') === 'checkout-page') {
     var count = parseFloat(docCookies.getItem('count'));
     var htmlString = '';
-    var temp =''
+    var temp ='';
+    var total = 0;
     console.log('checkout');
     for(i = 1; i <= count -1 ; i++) {
       temp += '<li class="checkout-item">';
@@ -290,12 +289,23 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       temp += '</li>';
      console.log(docCookies.getItem(i).split(',')[0]);
      console.log(docCookies.getItem(i).split(',')[1]);
-     console.log(docCookies.getItem(i).split(',')[2]);
+     total += parseFloat(docCookies.getItem(i).split(',')[2])
+     console.log(total);
      htmlString = temp;
     }
     $('#checkout-items ul').append(htmlString);
-
+    $('#checkout-items').append('<p class="checkout-item-total">Total: $' + total + '</p>');
   }
+  $('#payment-form').on('submit', function(e) {
+    e.preventDefault();
+    $('form ul').replaceWith('<p>Order Recieved, Your order will be ready in about' +
+    '15 minutes!</p>');
+    $('#payment h2').replaceWith('<h2>Order Completed</h2>');
+    docCookies.removeItem('count');
+    docCookies.setItem('count', '0',null,'/');
+    removeItems();
+  });
+
   function validPayment(form_array) {
     // make sure the following fields are not empty
     var isValid = true;
