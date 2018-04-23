@@ -718,7 +718,7 @@ article header {
   border: 0.1111em solid black;
   box-sizing: border-box;
   padding: 0.30555em;
-  width: 15%;
+  width: 66px;
 }
 #checkout-items {
   margin-top: 1.2222em; /* NOTE: 2.111em  */
@@ -758,7 +758,6 @@ article header {
   left: 11px;
 }
 .checkout-item-cost {
-  width: 15%;
   text-align: left;
 }
 #aside {
@@ -799,6 +798,10 @@ article header {
 #payment-btn {
   padding: 11px;
   bottom: 33px;
+}
+p.checkout-item-total {
+  text-align: right;
+  font-weight: bold;
 }
 @keyframes fadeinout {
   25% { opacity: 1; }
