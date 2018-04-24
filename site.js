@@ -11,7 +11,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   console.log((docCookies.getItem('count')));
   if(docCookies.keys().length === 1) {
     console.log('HERE');
-      docCookies.setItem('count', '0',null, '/');
+    docCookies.setItem('count', '0', null, '/');
   }
   $('#js-nav').on('click', function(e) {
     e.preventDefault();
@@ -95,7 +95,6 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     var pageID= $(this).closest('html').attr('id');
     var cost= parseFloat($(this).parent().siblings('.menu-item-cost').text().substring(1));
     var name= $(this).parent().siblings('.menu-item-header').text();
-    var item_count;
     var item;
     // console.log(this);
     // console.log(name);
@@ -107,7 +106,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       setTimeout(
         function() {
           $('#aside').removeClass('display');
-     }, 4500);
+        }, 4500);
       item= {
         type: 'Drinks',
         cost: cost,
@@ -115,14 +114,14 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       };
       items.push(item);
       setItem(item);
-      getItems();
+    //  getItems();
     } else if (pageID === 'desserts-page' && ($(this).hasClass('order-btn'))) {
       console.log('DESSERTS');
       $('#aside').addClass('display');
       setTimeout(
         function() {
-         $('#aside').removeClass('display');
-      }, 4500);
+          $('#aside').removeClass('display');
+        }, 4500);
       item= {
         type: 'Desserts',
         cost: cost,
@@ -130,14 +129,14 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       };
       items.push(item);
       setItem(item);
-      getItems();
+    //  getItems();
     }else if (pageID === 'pasta-page' && ($(this).hasClass('order-btn'))) {
       console.log('PASTA');
       $('#aside').addClass('display');
       setTimeout(
         function() {
-         $('#aside').removeClass('display');
-      }, 4500);
+          $('#aside').removeClass('display');
+        }, 4500);
       item= {
         type: 'Pasta',
         cost: cost,
@@ -145,14 +144,14 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       };
       items.push(item);
       setItem(item);
-      getItems();
+    //  getItems();
     }else if ($(this).closest('html').hasClass('sides-page') && ($(this).hasClass('order-btn'))) {
       console.log('SIDES');
       $('#aside').addClass('display');
       setTimeout(
         function() {
-         $('#aside').removeClass('display');
-      }, 4500);
+          $('#aside').removeClass('display');
+        }, 4500);
       item= {
         type: 'Sides',
         cost: cost,
@@ -160,14 +159,14 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       };
       items.push(item);
       setItem(item);
-      getItems();
+    //  getItems();
     }else if ($(this).closest('html').hasClass('wings-page') && ($(this).hasClass('order-btn'))) {
       console.log('WINGS');
       $('#aside').addClass('display');
       setTimeout(
         function() {
-         $('#aside').removeClass('display');
-      }, 4500);
+          $('#aside').removeClass('display');
+        }, 4500);
       item= {
         type: 'Wings',
         cost: cost,
@@ -175,25 +174,25 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       };
       items.push(item);
       setItem(item);
-      getItems();
-       }else if ($(this).closest('html').hasClass('pizza-page') && ($(this).hasClass('order-btn'))) {
-         console.log('PIZZA');
-         $('#aside').addClass('display');
-         setTimeout(
-           function() {
-            $('#aside').removeClass('display');
-         }, 4500);
-         item= {
-           type: 'Pizza',
-           cost: cost,
-           name: name
-         };
-         items.push(item);
-         setItem(item);
-         getItems();
+    //  getItems();
+    }else if ($(this).closest('html').hasClass('pizza-page') && ($(this).hasClass('order-btn'))) {
+      console.log('PIZZA');
+      $('#aside').addClass('display');
+      setTimeout(
+        function() {
+          $('#aside').removeClass('display');
+        }, 4500);
+      item= {
+        type: 'Pizza',
+        cost: cost,
+        name: name
+      };
+      items.push(item);
+      setItem(item);
+      // getItems();
     }else if ($(this).text() === "Customize") {
       console.log("CUSTOMIZE");
-      //window.location.href = 'https://sealteam362.github.io/Project-2/order-now/';
+    //  window.location.href = 'https://sealteam362.github.io/Project-2/order-now/';
     }else if ($(this).closest('li').attr('id') === "toppings-add-btn") {  // add cart btn
       if($('.topping-amount li:nth-of-type(n+2)').hasClass('selected')) { // Grabbing selected toppings
         item= {
@@ -233,10 +232,10 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       window.location.href = $(this).attr('href');
     }else if ($(this).attr('id') === 'cart-btn') {
       console.log('cart');
-    //  window.location.href = '/checkout';
-    window.location.href = '/Project-2/checkout';
+      //  window.location.href = '/checkout';
+      window.location.href = '/Project-2/checkout';
     } else {
-      //window.location.href = 'https://sealteam362.github.io/Project-2/food-choices/';
+    // window.location.href = 'https://sealteam362.github.io/Project-2/food-choices/';
     }
     //  if(($('.topping-amount li:nth-of-type(n+2).selected').closest('html h5'))
     function setItem(item) {
@@ -247,20 +246,21 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       }
       console.log(_item);
       console.log(count.toString());
-      docCookies.setItem(count, _item,null,'/');
+      docCookies.setItem(count, _item, null, '/');
       count++;
-      docCookies.setItem('count', count,null,'/');
+      docCookies.setItem('count', count, null, '/');
       console.log(count);
     }
-    function removeItems() {
-      console.log('function');
-      var count = parseFloat(docCookies.getItem('count'));
-      for(i = 0; i <= count -1; i++) {
-        docCookies.removeItem(i);
-        console.log(i+'');
-      }
-    }
   });
+  function removeItems() {
+    var count = parseFloat(docCookies.getItem('count'));
+    var i = 0;
+    console.log('function');
+    for(i = 0; i <= count -1; i++) {
+      docCookies.removeItem(i);
+      console.log(i+'');
+    }
+  }
   // function getItems() {
   //   var count = parseFloat(docCookies.getItem('count'));
   //   for(i = 1; i <= count -1 ; i++) {
@@ -271,30 +271,33 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   //   }
   // }
   if ($('html').attr('id') === 'checkout-page') {
-    var count = parseFloat(docCookies.getItem('count'));
-    var htmlString = '';
-    var temp ='';
-    var total = 0;
-    console.log('checkout');
-    for(i = 1; i <= count -1 ; i++) {
-      temp += '<li class="checkout-item">';
-      temp += '<ul>';
-      temp += '<li class="checkout-item-type">' + docCookies.getItem(i).split(',')[0];
-      temp += '</li>';
-      temp += '<li class="checkout-item-name">' + docCookies.getItem(i).split(',')[1];
-      temp += '</li>';
-      temp += '<li class="checkout-item-cost">' + '$'+docCookies.getItem(i).split(',')[2];
-      temp += '</li>';
-      temp += '</ul>';
-      temp += '</li>';
-     console.log(docCookies.getItem(i).split(',')[0]);
-     console.log(docCookies.getItem(i).split(',')[1]);
-     total += parseFloat(docCookies.getItem(i).split(',')[2])
-     console.log(total);
-     htmlString = temp;
-    }
-    $('#checkout-items ul').append(htmlString);
-    $('#checkout-items').append('<p class="checkout-item-total">Total: $' + total + '</p>');
+    (function () {
+      var count = parseFloat(docCookies.getItem('count'));
+      var htmlString = '';
+      var temp ='';
+      var total = 0;
+      var i = 0;
+      console.log('checkout');
+      for(i = 1; i <= count -1; i++) {
+        temp += '<li class="checkout-item">';
+        temp += '<ul>';
+        temp += '<li class="checkout-item-type">' + docCookies.getItem(i).split(',')[0];
+        temp += '</li>';
+        temp += '<li class="checkout-item-name">' + docCookies.getItem(i).split(',')[1];
+        temp += '</li>';
+        temp += '<li class="checkout-item-cost">' + '$'+docCookies.getItem(i).split(',')[2];
+        temp += '</li>';
+        temp += '</ul>';
+        temp += '</li>';
+        console.log(docCookies.getItem(i).split(',')[0]);
+        console.log(docCookies.getItem(i).split(',')[1]);
+        total += parseFloat(docCookies.getItem(i).split(',')[2]);
+        console.log(total);
+        htmlString = temp;
+      }
+      $('#checkout-items ul').append(htmlString);
+      $('#checkout-items').append('<p class="checkout-item-total">Total: $' + total + '</p>');
+    });
   }
   $('#payment-form').on('submit', function(e) {
     e.preventDefault();
@@ -302,7 +305,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     '15 minutes!</p>');
     $('#payment h2').replaceWith('<h2>Order Completed</h2>');
     docCookies.removeItem('count');
-    docCookies.setItem('count', '0',null,'/');
+    docCookies.setItem('count', '0', null, '/');
     removeItems();
   });
 
@@ -327,7 +330,6 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     return isValid;
   }
   validPayment(items);
-
 })(jQuery);
 // console.log($(this).text());
 // console.log($(this).attr('href'));
