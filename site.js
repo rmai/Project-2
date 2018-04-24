@@ -270,34 +270,35 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
   //    console.log(docCookies.getItem(i).split(',')[2] + i);
   //   }
   // }
+  function appendHTML() {
+    var count = parseFloat(docCookies.getItem('count'));
+    var htmlString = '';
+    var temp ='';
+    var total = 0;
+    var i = 0;
+    console.log('checkout');
+    for(i = 1; i <= count -1; i++) {
+      temp += '<li class="checkout-item">';
+      temp += '<ul>';
+      temp += '<li class="checkout-item-type">' + docCookies.getItem(i).split(',')[0];
+      temp += '</li>';
+      temp += '<li class="checkout-item-name">' + docCookies.getItem(i).split(',')[1];
+      temp += '</li>';
+      temp += '<li class="checkout-item-cost">' + '$'+docCookies.getItem(i).split(',')[2];
+      temp += '</li>';
+      temp += '</ul>';
+      temp += '</li>';
+      console.log(docCookies.getItem(i).split(',')[0]);
+      console.log(docCookies.getItem(i).split(',')[1]);
+      total += parseFloat(docCookies.getItem(i).split(',')[2]);
+      console.log(total);
+      htmlString = temp;
+    }
+    $('#checkout-items ul').append(htmlString);
+    $('#checkout-items').append('<p class="checkout-item-total">Total: $' + total + '</p>');
+  }
   if ($('html').attr('id') === 'checkout-page') {
-    (function () {
-      var count = parseFloat(docCookies.getItem('count'));
-      var htmlString = '';
-      var temp ='';
-      var total = 0;
-      var i = 0;
-      console.log('checkout');
-      for(i = 1; i <= count -1; i++) {
-        temp += '<li class="checkout-item">';
-        temp += '<ul>';
-        temp += '<li class="checkout-item-type">' + docCookies.getItem(i).split(',')[0];
-        temp += '</li>';
-        temp += '<li class="checkout-item-name">' + docCookies.getItem(i).split(',')[1];
-        temp += '</li>';
-        temp += '<li class="checkout-item-cost">' + '$'+docCookies.getItem(i).split(',')[2];
-        temp += '</li>';
-        temp += '</ul>';
-        temp += '</li>';
-        console.log(docCookies.getItem(i).split(',')[0]);
-        console.log(docCookies.getItem(i).split(',')[1]);
-        total += parseFloat(docCookies.getItem(i).split(',')[2]);
-        console.log(total);
-        htmlString = temp;
-      }
-      $('#checkout-items ul').append(htmlString);
-      $('#checkout-items').append('<p class="checkout-item-total">Total: $' + total + '</p>');
-    });
+    appendHTML();
   }
   $('#payment-form').on('submit', function(e) {
     e.preventDefault();
