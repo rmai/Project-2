@@ -192,6 +192,8 @@ html {
   background-color: #D7DCDD;
   color: #093755;
   box-sizing: border-box;
+  padding-bottom: 2.444em;
+  /* NOTE: 44px Footer attached to end of HTML so its giving it more space*/
   position: relative;
 }
 h1,
@@ -619,9 +621,6 @@ article header {
 }
 #menu.no-nav-menu {
   margin-top: 0;
-}
-#pizza-customization-page article {
-  position: relative;
 }
 #pizza-customization-page section {
   border: 0.111em  solid black;
