@@ -329,7 +329,7 @@ article header {
   float: left;
 }
 .pizza-main-options li {
-  border-bottom: 0.05555 solid black;
+  border-bottom: 0.05555em solid black;
   box-sizing: border-box;
 }
 .toppings-section ul > li {
@@ -353,6 +353,9 @@ article header {
   position: absolute;
   bottom: 0.6111em; /* NOTE: 11px */
   left: 30%;
+}
+.checkout-item ul > li {
+  display: block;
 }
 .pizza-secondary-options li:nth-of-type(n+2) {
   display: inline-block;
@@ -402,11 +405,17 @@ article header {
 /* .pizza-button ul li:nth-of-type(n+2),
 .custom-pizza {
   right: 5%;
-  background-color: rgba(103,104,106,0.6); /* NOTE: */
+  background-color: rgba(103,104,106,0.6);
   color: white;
 } */
 .toppings-section ul > li:first-of-type {
-  border-top: 0.05555 solid black;
+  border-top: 0.05555em solid black;
+}
+.checkout-item ul > li:last-of-type {
+  width: 15%;
+  position: absolute;
+  right: 1.22222em;
+  bottom: 1.2222em;
 }
 #order-options li,
 #food-choices-navigation li {
@@ -499,7 +508,7 @@ article header {
 }
 #wings-navigation li {
   width: 25%;
-  padding: 0 11px;
+  padding: 0 0.6111em;
 }
 #sides-navigation li {
   width: 50%;
@@ -507,6 +516,9 @@ article header {
 #food-choices-navigation li {
   float: left;
   width: 45%;
+}
+#aside li {
+  list-style: none;
 }
 #food-choices-navigation li:nth-child(even) {
   margin-left: 5%;
@@ -718,86 +730,73 @@ article header {
   border: 0.1111em solid black;
   box-sizing: border-box;
   padding: 0.30555em;
-  width: 66px;
+  width: 3.66667em;
 }
 #checkout-items {
   margin-top: 1.2222em; /* NOTE: 2.111em  */
   border: 0.111em  solid black;
   box-sizing: border-box;
   padding: 1.2222em;
-  min-height: 88px;
+  min-height: 4.8888em;
 }
 .checkout-item {
-  border-bottom: 4px  solid rgba(109,181,195,1);
-  padding: 0.1111em 0.6111em; /* NOTE: 11px */
-  padding: 22px;
-  margin-bottom: 22px;
+  border-bottom: 0.222222em  solid rgba(109,181,195,1);
+  padding: 1.22222em;
+  margin-bottom: 1.22222em;
   position: relative;
-  height: 44px;
-}
-.checkout-item ul >li {
-  display: block;
-}
-.checkout-item ul >li:last-of-type {
-  width: 15%;
-  position: absolute;
-  right: 22px;
-  bottom: 22px;
+  height: 2.4444em;
 }
 .checkout-item-name {
-  font-size: 20px;
+  font-size: 1.1111em;
   font-weight: bold;
   position: absolute;
-  left: 11px;
-  bottom: 11px;
+  left: 0.6111em;
+  bottom: 0.6111em;
 }
 .checkout-item-type {
   font-weight: bold;
   position: absolute;
   top: 0;
-  left: 11px;
+  left: 0.6111em;
 }
 .checkout-item-cost {
   text-align: left;
 }
 #aside {
   position: fixed;
-  top: 44px;
+  top: 2.4444em;
   left: 15%;
   background-color: rgba(109,181,195,1);
-  width: 300px;
-  height: 176px;
+  width: 16.66667em;
+  height: 9.7777em;
   z-index: 1;
   display: none;
   opacity: 0;
 }
 #aside h2 {
-  font-size: 26px;
+  font-size: 1.4444em;
   font-weight: bold;
   position: absolute;
   top: 0;
   left: 30%;
 }
-#aside li {
-  list-style: none;
-}
 #aside p {
-  font-size: 22px;
+  font-size: 1.2222em;
   position: absolute;
-  top: 66px;
-  left: 11px;
+  top: 3.66667em;
+  left: 0.6111em;
 }
 #aside .button {
   background-color: gray;
-  padding: 11px;
+  padding: 0.6111em;
 }
 #aside.display {
   display: block;
   animation: fadeinout 4s linear forwards;
 }
 #payment-btn {
-  padding: 11px;
-  bottom: 33px;
+  padding: 0.61111em;
+  bottom: 1.83333em;
 }
 p.checkout-item-total {
   text-align: right;
@@ -806,7 +805,7 @@ p.checkout-item-total {
 @keyframes fadeinout {
   25% { opacity: 1; }
   75% { opacity: 1; }
-  100% { opacity: 0;}
+  100% { opacity: 0; }
 }
 /* State Styles */
 /*
@@ -887,7 +886,7 @@ p.checkout-item-total {
     left: 25%;
   }
   .checkout-item-name {
-    font-size: 22px;
+    font-size: 1.222em;
   }
 }
 @media screen and (min-width: 600px) {
@@ -931,22 +930,22 @@ p.checkout-item-total {
   }
   .js #nav ul {
     display: block;
-    margin-top: -11px;
+    margin-top: -0.6111em;
   }
   .js #nav li {
     display: inline-block;
     text-align: center;
     width: 15%;
-    font-size: 22px;
+    font-size: 1.222em;
     font-weight: bold;
     border-top: none;
     border-bottom: none;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 0.111em solid black;
+    border-right: 0.111em solid black;
     margin-left: 5%;
   }
   .js #header {
-    height: 82px;
+    height: 4.5555em;
   }
 }
 /* @media screen and (min-width: 500px) {
