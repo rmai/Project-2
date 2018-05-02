@@ -763,6 +763,9 @@ article header {
   left: 0.6111em;
 }
 .checkout-item-cost {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
   text-align: left;
 }
 #aside {
@@ -804,6 +807,14 @@ article header {
 p.checkout-item-total {
   text-align: right;
   font-weight: bold;
+}
+.checkout-item-close {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  top: -25%;
+  left: 95%;
 }
 @keyframes fadeinout {
   25% { opacity: 1; }

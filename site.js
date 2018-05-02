@@ -287,6 +287,8 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
       temp += '</li>';
       temp += '<li class="checkout-item-cost">' + '$'+docCookies.getItem(i).split(',')[2];
       temp += '</li>';
+      temp += '<li class="checkout-item-close"><a href= "#">x</a>';
+      temp += '</li>';
       temp += '</ul>';
       temp += '</li>';
       console.log(docCookies.getItem(i).split(',')[0]);
