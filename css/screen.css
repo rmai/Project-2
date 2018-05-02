@@ -860,7 +860,7 @@ p.checkout-item-total {
   box-shadow: 0  0.2778em 0.556em #000000; /* NOTE: 5px/18 =0.2778 ; 10/18=556  */
 }
 .js #nav.nav-is-visible li {
-  border-bottom: 0.555em solid black; /* NOTE: diagnostics */
+  border-bottom: 0.1113em solid black; /* NOTE: diagnostics */
   box-sizing: border-box;
   font-size: 1.2222em; /* NOTE: 2.111em  */
 }
