@@ -527,9 +527,11 @@ article header {
 }
 .no-js #nav {
   margin-top: 2.7777em; /* NOTE: 50px */
+  padding-left: 0.61111em; /* NOTE: 11px */
+  padding-right: 0.61111em; /* NOTE: 11px */
 }
 .no-js #nav li {
-  width: 45%;
+  width: 33%;
   margin-top: 0.6111em; /* NOTE: 11px */
   background-color: rgba(109,181,195,1);
   border-top-right-radius: 0.75em;
@@ -548,7 +550,6 @@ article header {
   float: right;
   margin-left: 5%;
   margin-top: -2.7777em; /* NOTE: 50px */
-  margin-right: 1.222em; /* 22 / 18 = 1.2222222 */
 }
 .no-js #nav li:last-child {
   margin: 0 auto;
@@ -934,7 +935,7 @@ p.checkout-item-total {
   .js #nav li {
     display: inline-block;
     text-align: center;
-    width: 15%;
+    width: 20%;
     font-size: 1.222em;
     font-weight: bold;
     border-top: none;
