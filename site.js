@@ -90,7 +90,6 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     }
     //  $(this).addClass('selected');
   });
-
   $('.button').on('click', function(e) {
     var pageID= $(this).closest('html').attr('id');
     var cost= parseFloat($(this).parent().siblings('.menu-item-cost').text().substring(1));
@@ -312,7 +311,15 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     docCookies.setItem('count', '0', null, '/');
     removeItems();
   });
-
+  // checkout delete item
+  $('.checkout-item-close a').on('click', function(e) {
+    var total = parseFloat($('.checkout-item-total').text().substring(8));
+    var cost= parseFloat($(this).parent().siblings('.checkout-item-cost').text().substring(1));
+    total = total - cost;
+    $('.checkout-item-total').text('Total: $' + total);
+    console.log(total);
+    $(this).parents('.checkout-item')[0].remove();
+  });
   function validPayment(form_array) {
     // make sure the following fields are not empty
     var isValid = true;
