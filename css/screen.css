@@ -530,6 +530,9 @@ article header {
   padding-left: 0.61111em; /* NOTE: 11px */
   padding-right: 0.61111em; /* NOTE: 11px */
 }
+#nav a.selected {
+  color: #7F7F7F;
+}
 .no-js #nav li {
   width: 33%;
   margin-top: 0.6111em; /* NOTE: 11px */
