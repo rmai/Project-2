@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="pizzas" class="no-js">
+<html lang="en" id="checkout-page" class="no-js">
   <head>
     <title>Seal Team Pizzeria</title>
     <meta charset="UTF-8" />
@@ -15,27 +15,22 @@
       <nav id="nav">
         <ul>
           <li><a href="../food-choices">Food Choices</a></li>
-          <li><a class="selected" href="../coupons">Coupons</a></li>
-          <li><a href="../checkout/">My Cart</a></li>
+          <li><a href="../coupons">Coupons</a></li>
+          <li><a class="selected" href="../checkout/">My Cart</a></li>
         </ul>
       </nav>
     </header>
     <main id="content">
       <article id="primary">
         <header>
-          <section id="coupons">
-            <h2>Current Coupons</h2>
-            <p id="current-coupons">
-              Try one of these coupons codes at the checkout for a discount!
-            </p>
-          </section>
+          <h2>Checkout</h2>
         </header>
-        <section id="coupon-codes">
-          <ul>
-            <li id="coupon">$5 off all custom pizza!: MEHUNGRY</li>
-            <li id="coupon-2">$2 off any pizza!: MONEY</li>
-            <li id="coupon-3">No Delivery Charge!: DELIVERYBOY</li>
+        <section id="checkout-items">
+          <ul id="checkout-items-list">
           </ul>
+        </section>
+        <section>
+          <a id="payment-btn" class="button" href="../payment">Pay Now</a>
         </section>
       </article>
     </main>

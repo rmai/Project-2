@@ -14,10 +14,9 @@
       <h1><a href="../">Seal Team Pizza</a></h1>
       <nav id="nav">
         <ul>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Coupons</a></li>
-          <li><a href="">Location</a></li>
-          <li><a href="">My Cart</a></li>
+          <li><a href="../food-choices">Food Choices</a></li>
+          <li><a href="../coupons">Coupons</a></li>
+          <li><a href="../checkout/">My Cart</a></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +30,7 @@
               <li><a href="meats/">Meats</a></li>
               <li><a href="chicken/">Chicken</a></li>
               <li><a href="veggie/">Veggie</a></li>
-              <li><a href="create-your-own/">Create Your Own</a></li>
+              <!-- <li><a href="create-your-own/">Create Your Own</a></li> -->
             </ul>
           </nav>
         </header>
@@ -42,19 +41,15 @@
                 <li class="menu-item-header">Cheese Pizza</li>
                 <li class="menu-item-description">Your favorite cheese pizza
                   made with classic marinara sauce topped with mozzarella cheese.
-                  <span class="cost">$8.00</span>
                 </li>
                 <li class="menu-item-pic">
                   <figure id="cheese-pizza">
                     <img src="../media/cheese-pizza.jpg" alt="Cheese Pizza" />
                   </figure>
                 </li>
+                <li class="menu-item-cost">$8.00</li>
                 <li class="menu-item-button pizza-button">
-                  <ul>
-                    <li><a href="../order-now/" class="button" name="Cheese-Pizza" >Order Now</a>
-                    </li>
-                    <li><a href="../order-now/" class="button" name="Cheese-Pizza" >Customize</a></li>
-                  </ul>
+                  <a href="#" class="button order-btn">Order Now</a>
                 </li>
               </ul>
             </li>
@@ -63,19 +58,16 @@
                 <li class="menu-item-header">Pepperoni Pizza</li>
                 <li class="menu-item-description">This gourmet pizza is ideal for
                   easy late night delivery, complete with mozzarella cheese and
-                  pepperoni.<span class="cost">$9.00</span>
+                  pepperoni.
                 </li>
                 <li class="menu-item-pic">
                   <figure id="pepperoni-pizza-pic">
                     <img src="../media/cheese-pizza.jpg" alt="Pepperoni Pizza" />
                   </figure>
                 </li>
+                <li class="menu-item-cost">$9.00</li>
                 <li class="menu-item-button pizza-button">
-                  <ul>
-                    <li><a href="../order-now/" class="button" name="Pepperoni-Pizza" >Order Now</a>
-                    </li>
-                    <li><a href="../order-now/" class="button" name="Pepperoni-Pizza" >Customize</a></li>
-                  </ul>
+                  <a href="#" class="button order-btn">Order Now</a>
                 </li>
               </ul>
             </li>
@@ -85,19 +77,15 @@
                 <li class="menu-item-description">Meat lover's pizza is the
                   perfect game day pizza, packed with pepperoni, Italian sausage,
                   ham, bacon, season pork and beef.
-                  <span class="cost">$10.00</span>
                 </li>
                 <li class="menu-item-pic">
                   <figure id="meatlovers-pizza-pic">
                     <img src="../media/meatlovers-pizza.jpg" alt="Meat Lovers Pizza" />
                   </figure>
                 </li>
+                <li class="menu-item-cost">$10.00</li>
                 <li class="menu-item-button pizza-button">
-                  <ul>
-                    <li><a href="../order-now/" class="button" name="Meat-Lover's-Pizza" >Order Now</a>
-                    </li>
-                    <li><a href="../order-now/" class="button" name="Meat-Lover's-Pizza" >Customize</a></li>
-                  </ul>
+                  <a href="#" class="button order-btn">Order Now</a>
                 </li>
               </ul>
             </li>
@@ -113,16 +101,13 @@
                     <img src="../media/supreme-pizza.jpg" alt="Supreme Pizza" />
                   </figure>
                 </li>
+                <li class="menu-item-cost">$9.50</li>
                 <li class="menu-item-button pizza-button">
-                  <ul>
-                    <li><a href="../order-now/" class="button" name="Supreme-Pizza" >Order Now</a>
-                    </li>
-                    <li><a href="../order-now/" class="button" name="Supreme-Pizza" >Customize</a></li>
-                  </ul>
+                  <a href="#" class="button order-btn">Order Now</a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item">
+            <!-- <li class="menu-item">
               <ul>
                 <li class="menu-item-header">Create Your Own</li>
                 <li class="menu-item-description">Create your own pizza with Pizza
@@ -135,11 +120,22 @@
                     <img src="../media/create-your-own-pizza.jpg" alt="Create Your Own Pizza" />
                   </figure>
                 </li>
-                <li class="menu-item-button"><a href="../order-now/" class="button custom-pizza" name="Custom-Pizza" >Customize</a></li>
+                <li class="menu-item-button pizza-button">
+                  <a href="#" class="button order-btn">Order Now</a>
+                </li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </section>
+        <aside id="aside">
+          <header>
+            <h2>Item added!</h2>
+          </header>
+          <section class="aside-content">
+            <p>Would you like to view your cart?</p>
+            <li><a href="../checkout/" class="button" id="cart-btn">View Cart</a></li>
+          </section>
+        </aside>
       </article>
     </main>
     <footer>
