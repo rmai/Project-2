@@ -795,7 +795,7 @@ article header {
 }
 #aside.display {
   display: block;
-  animation: fadeinout 4s linear forwards;
+  animation: fadeinout 2.7s linear forwards;
 }
 #payment-btn {
   padding: 0.61111em;
