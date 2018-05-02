@@ -530,6 +530,12 @@ article header {
   padding-left: 0.61111em; /* NOTE: 11px */
   padding-right: 0.61111em; /* NOTE: 11px */
 }
+.toppings-section h5 a.selected {
+  background-color: rgba(109,181,195,1);
+  padding: 0.6111em; /* NOTE: 11px */
+  font-size: 1.3333em;
+  line-height: 1.83333em; /* NOTE: 33px */
+}
 #nav a.selected {
   color: #7F7F7F;
 }
@@ -632,12 +638,6 @@ article header {
   box-sizing: inherit;
   /* NOTE: Content below headers down*/
   padding-top: 1.2222em; /* NOTE: 2.111em  */
-}
-.toppings-section h5 a.selected {
-  background-color: rgba(109,181,195,1);
-  padding: 0.6111em; /* NOTE: 11px */
-  font-size: 1.3333em;
-  line-height: 1.83333em; /* NOTE: 33px */
 }
 #pizza-customization-page h3 a.selected {
   height: 3.666667em;

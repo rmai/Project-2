@@ -312,7 +312,7 @@ var docCookies={getItem:function(e){return e?decodeURIComponent(document.cookie.
     removeItems();
   });
   // checkout delete item
-  $('.checkout-item-close a').on('click', function(e) {
+  $('.checkout-item-close a').on('click', function() {
     var total = parseFloat($('.checkout-item-total').text().substring(8));
     var cost= parseFloat($(this).parent().siblings('.checkout-item-cost').text().substring(1));
     total = total - cost;
